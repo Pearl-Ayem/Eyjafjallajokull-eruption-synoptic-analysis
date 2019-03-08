@@ -1,0 +1,2531 @@
+ Simulation Date (CCYYMMDD): 20190308
+ Simulation Time (HHMMSS.S): 043852.911
+ Simulation Date (CCYYMMDD): 20190308
+ Simulation Time (HHMMSS.S): 043852.947
+ Simulation Date (CCYYMMDD): 20190308
+ Simulation Time (HHMMSS.S): 043852.994
+ Simulation Date (CCYYMMDD): 20190308
+ Simulation Time (HHMMSS.S): 043853.028
+ Simulation Date (CCYYMMDD): 20190308
+ Simulation Time (HHMMSS.S): 043853.069
+ 
+   KG   KT DATA  SIZE   NX   NY
+    1    1 GDAS 111.2  360  181
+    1    2 GDAS 111.2  360  181
+    1    3 GDAS 111.2  360  181
+    1    4 GDAS 111.2  360  181
+    1    5 GDAS 111.2  360  181
+ 
+  NOTICE   main: number meteo grids and times -            1           5
+  
+ HYSPLIT4
+ Last Changed Rev: 992
+ Last Changed Date: 2018-12-11 09:28:29 -0500 (Tue, 11 Dec 2018)
+ 
+ ------------- Start Namelist configuration -------------------
+ Internal grid parameters (nlvl,aa,bb,cc):           34   30.00000    
+  -25.00000       5.000000    
+ &SETUP
+ INITD   =           0,
+ KHMAX   =        9999,
+ NUMPAR  =       34000,
+ MAXPAR  =      150000,
+ MAXDIM  =           1,
+ QCYCLE  =  0.0000000E+00,
+ P10F    =   1.000000    ,
+ KMIXD   =           0,
+ KMIX0   =         150,
+ FRME    =  0.1000000    ,
+ FRMR    =  0.0000000E+00,
+ KRND    =           6,
+ DELT    =  0.0000000E+00,
+ KDEF    =           0,
+ TKERD   =  0.1800000    ,
+ TKERN   =  0.1800000    ,
+ NDUMP   =           6,
+ NCYCL   =           6,
+ TRATIO  =  0.7500000    ,
+ ISOT    =         -99,
+ MGMIN   =          10,
+ KMSL    =           1,
+ NSTR    =           0,
+ MHRS    =           0,
+ NVER    =           0,
+ CPACK   = 99*1,
+ CMASS   =           0,
+ ICHEM   =           0,
+ EFILE   =                                                                                 ,
+ VSCALE  =   200.0000    ,
+ VSCALES =   5.000000    ,
+ VSCALEU =   200.0000    ,
+ K10M    =           1,
+ VDIST   = VMSDIST                                                                         ,
+ KHINP   =           0,
+ PINBC   = PARINBC                                                                         ,
+ TOUT    =           0,
+ TM_PRES =           0,
+ TM_TPOT =           0,
+ TM_TAMB =           0,
+ TM_RAIN =           0,
+ TM_MIXD =           0,
+ TM_TERR =           0,
+ HSCALE  =   10800.00    ,
+ TM_DSWF =           0,
+ TM_RELH =           0,
+ TM_SPHU =           0,
+ TM_MIXR =           0,
+ DXF     =   1.000000    ,
+ DYF     =   1.000000    ,
+ DZF     =  9.9999998E-03,
+ PINPF   = PARINIT                                                                         ,
+ POUTF   = PARDUMP.28305                                                                   ,
+ NINIT   =           1,
+ KAGL    =           0,
+ KPUFF   =           0,
+ KBLT    =           2,
+ KZMIX   =           0,
+ TVMIX   =   1.000000    ,
+ KBLS    =           1,
+ CONAGE  =          48,
+ KSPL    =           1,
+ FRHS    =   1.000000    ,
+ FRVS    =  9.9999998E-03,
+ FRTS    =  0.1000000    ,
+ FRHMAX  =   3.000000    ,
+ SPLITF  =   1.000000    ,
+ MESSG   = MESSAGE                                                                         ,
+ NBPTYP  =           1,
+ RHB     =          80,
+ RHT     =          60,
+ OUTDT   =           0,
+ DECAY   =           1,
+ KWET    =           1,
+ KRAND   =           1,
+ CAPEMIN =  -1.000000    ,
+ TKEMIN  =  1.0000000E-03,
+ WBWR    =  0.0000000E+00,
+ WBWF    =  0.0000000E+00,
+ WBBH    =  0.0000000E+00,
+ SEED    =          -1
+ /
+ ------------- End Namelist configuration -------------------
+  
+  NOTICE   main: pollutant initialization flags
+       Grav settling -  T
+  NOTICE   main: meteorological data flags
+     Ten meter wind -  T
+     Two meter temp -  T
+     Exchange coeff -  F
+          Heat flux -  T
+      Momentum flux -  T
+  Velocity variance -  F
+       3D TKE field -  F
+     Down shortwave -  T
+  Friction velocity -  F
+      Friction temp -  F
+     Terrain height -  T
+   Surface pressure -  T
+  Mixed layer depth -  T
+  Convective mixing -  T
+  Profile averaging -            0
+   Stability method -            1
+  Horizontal mixing -            0
+  PBL mixing scheme -            2
+   Free Trop Mixing -    1.000000    
+  Precip accumulate -          360
+ ------------- Start computation messages -------------------
+  NOTICE advrng: (kg ,xyr,xy1) -  1   10   10  337  150
+  NOTICE metpos: closed unit -            1           1        1001
+  NOTICE metpos: (mtime,ftime) -     58003920           0
+  NOTICE metpos: (mtime,ftime) -     58004100           0
+  NOTICE advpnt: (kg,nx,ny,nz) -     1   10   10   34
+  NOTICE sfcinp: reading ASCDATA.CFG
+  NOTICE sfcinp: record terminator = LF
+  NOTICE metgrd: (kg, xyr,xy1) -     1   10   10  337  150
+  NOTICE metinp: GDAS 1 8529   10   10  337  150 58003920 10  4 14 12
+ --------------------------------------------------------
+  NOTICE prfprs: extrapolation from level (k,m):           30   26255.00    
+ Input data levels:           23     Internal Sigma levels:           34
+ --------------------------------------------------------
+  NOTICE metinp: GDAS 1 8693   10   10  337  150 58004100 10  4 14 15
+  NOTICE advrng: (kg ,xyr,xy1) -  1   10   10  337  150
+  NOTICE   main: Initial time step (min)            6
+  NOTICE emspnt: emissions started
+  NOTICE   main:            1    58004046         568   3598329.    
+  NOTICE   main:            1    58004052        1136   7195582.    
+  NOTICE   main:            1    58004058        1704  1.0793245E+07
+  NOTICE   main:            1    58004064        2272  1.4389701E+07
+  NOTICE   main:            1    58004070        2840  1.7975756E+07
+  NOTICE   main:            1    58004076        3408  2.1555862E+07
+  NOTICE   main:            1    58004082        3976  2.5132440E+07
+  NOTICE   main:            1    58004088        4544  2.8697868E+07
+  NOTICE   main:            1    58004094        5112  3.2271284E+07
+  NOTICE   main:            1    58004100        5680  3.5842624E+07
+  NOTICE advrng: (kg ,xyr,xy1) -  1   21   19  332  145
+  NOTICE metpos: (mtime,ftime) -     58004280    58003920
+  NOTICE metinp: GDAS 1 8857   10   10  337  150 58004280 10  4 14 18
+  NOTICE   main:            2    58004102        5872  3.7033496E+07
+  NOTICE   main:            2    58004104        6064  3.8223784E+07
+  NOTICE   main:            2    58004106        6256  3.9414208E+07
+  NOTICE   main:            2    58004108        6448  4.0606148E+07
+  NOTICE   main:            2    58004110        6640  4.1797916E+07
+  NOTICE   main:            2    58004112        6832  4.2989432E+07
+  NOTICE   main:            2    58004114        7024  4.4183172E+07
+  NOTICE   main:            2    58004116        7216  4.5376848E+07
+  NOTICE   main:            2    58004118        7408  4.6568444E+07
+  NOTICE   main:            2    58004120        7600  4.7759176E+07
+  NOTICE   main:            2    58004122        7792  4.8950084E+07
+  NOTICE   main:            2    58004124        7984  5.0139724E+07
+  NOTICE   main:            2    58004126        8176  5.1324144E+07
+  NOTICE   main:            2    58004128        8368  5.2514640E+07
+  NOTICE   main:            2    58004130        8560  5.3700680E+07
+  NOTICE   main:            2    58004132        8752  5.4884620E+07
+  NOTICE   main:            2    58004134        8944  5.6068536E+07
+  NOTICE   main:            2    58004136        9136  5.7254576E+07
+  NOTICE   main:            2    58004138        9328  5.8434636E+07
+  NOTICE metsub: (kg ,xyr,xy1) -     1   21   19  332  145 shift
+  NOTICE advpnt: (kg,nx,ny,nz) -     1   21   19   34
+  NOTICE metgrd: (kg, xyr,xy1) -     1   21   19  332  145
+  NOTICE metinp: GDAS 1 8693   21   19  332  145 58004100 10  4 14 15
+  NOTICE metinp: GDAS 1 8857   21   19  332  145 58004280 10  4 14 18
+  NOTICE   main:            2    58004140        9520  5.9617476E+07
+  NOTICE   main:            2    58004142        9712  6.0797900E+07
+  NOTICE   main:            2    58004144        9904  6.1981624E+07
+  NOTICE   main:            2    58004146       10096  6.3161668E+07
+  NOTICE   main:            2    58004148       10288  6.4344204E+07
+  NOTICE   main:            2    58004150       10480  6.5528524E+07
+  NOTICE   main:            2    58004152       10672  6.6710880E+07
+  NOTICE   main:            2    58004154       10864  6.7894704E+07
+  NOTICE   main:            2    58004156       11056  6.9078960E+07
+  NOTICE   main:            2    58004158       11248  7.0259776E+07
+  NOTICE   main:            2    58004160       11440  7.1442112E+07
+  NOTICE advrng: (kg ,xyr,xy1) -  1   25   21  331  144
+  NOTICE   main:            3    58004162       11632  7.2623616E+07
+  NOTICE   main:            3    58004164       11824  7.3804320E+07
+  NOTICE   main:            3    58004166       12016  7.4982256E+07
+  NOTICE   main:            3    58004168       12208  7.6157936E+07
+  NOTICE   main:            3    58004170       12400  7.7333808E+07
+  NOTICE   main:            3    58004172       12592  7.8509696E+07
+  NOTICE   main:            3    58004174       12784  7.9689456E+07
+  NOTICE   main:            3    58004176       12976  8.0870560E+07
+  NOTICE   main:            3    58004178       13168  8.2052128E+07
+  NOTICE   main:            3    58004180       13360  8.3233040E+07
+  NOTICE   main:            3    58004182       13552  8.4411360E+07
+  NOTICE   main:            3    58004184       13744  8.5590208E+07
+  NOTICE   main:            3    58004186       13936  8.6770576E+07
+  NOTICE   main:            3    58004188       14128  8.7946512E+07
+  NOTICE   main:            3    58004190       14320  8.9116384E+07
+  NOTICE   main:            3    58004192       14512  9.0283888E+07
+  NOTICE   main:            3    58004194       14704  9.1446768E+07
+  NOTICE   main:            3    58004196       14896  9.2615328E+07
+  NOTICE   main:            3    58004198       15088  9.3787296E+07
+  NOTICE   main:            3    58004200       15280  9.4962848E+07
+  NOTICE   main:            3    58004202       15472  9.6138896E+07
+  NOTICE   main:            3    58004204       15664  9.7311760E+07
+  NOTICE   main:            3    58004206       15856  9.8481056E+07
+  NOTICE   main:            3    58004208       16048  9.9650608E+07
+  NOTICE   main:            3    58004210       16240  1.0082323E+08
+  NOTICE   main:            3    58004212       16432  1.0199442E+08
+  NOTICE   main:            3    58004214       16624  1.0316269E+08
+  NOTICE   main:            3    58004216       16816  1.0433534E+08
+  NOTICE   main:            3    58004218       17008  1.0551160E+08
+  NOTICE   main:            3    58004220       17200  1.0668720E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1   28   22  331  144
+  NOTICE   main:            4    58004222       17392  1.0786317E+08
+  NOTICE   main:            4    58004224       17584  1.0903840E+08
+  NOTICE   main:            4    58004226       17776  1.1021250E+08
+  NOTICE   main:            4    58004228       17968  1.1138562E+08
+  NOTICE   main:            4    58004230       18160  1.1255864E+08
+  NOTICE   main:            4    58004232       18352  1.1373256E+08
+  NOTICE   main:            4    58004234       18544  1.1490541E+08
+  NOTICE   main:            4    58004236       18736  1.1607552E+08
+  NOTICE   main:            4    58004238       18928  1.1724450E+08
+  NOTICE   main:            4    58004240       19120  1.1841464E+08
+  NOTICE   main:            4    58004242       19312  1.1958224E+08
+  NOTICE   main:            4    58004244       19504  1.2075174E+08
+  NOTICE   main:            4    58004246       19696  1.2192162E+08
+  NOTICE   main:            4    58004248       19888  1.2308952E+08
+  NOTICE   main:            4    58004250       20080  1.2425840E+08
+  NOTICE   main:            4    58004252       20272  1.2542602E+08
+  NOTICE   main:            4    58004254       20464  1.2659330E+08
+  NOTICE   main:            4    58004256       20656  1.2776198E+08
+  NOTICE   main:            4    58004258       20848  1.2891990E+08
+  NOTICE   main:            4    58004260       21040  1.3007405E+08
+  NOTICE   main:            4    58004262       21232  1.3123442E+08
+  NOTICE   main:            4    58004264       21424  1.3239458E+08
+  NOTICE   main:            4    58004266       21616  1.3354870E+08
+  NOTICE   main:            4    58004268       21808  1.3470906E+08
+  NOTICE   main:            4    58004270       22000  1.3586992E+08
+  NOTICE   main:            4    58004272       22192  1.3703200E+08
+  NOTICE   main:            4    58004274       22384  1.3819078E+08
+  NOTICE   main:            4    58004276       22576  1.3935094E+08
+  NOTICE   main:            4    58004278       22768  1.4050864E+08
+  NOTICE   main:            4    58004280       22960  1.4166773E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1   32   24  328  142
+  NOTICE metpos: (mtime,ftime) -     58004460    58004100
+  NOTICE metinp: GDAS 1 9021   21   19  332  145 58004460 10  4 14 21
+  NOTICE   main:            5    58004282       23152  1.4282989E+08
+  NOTICE   main:            5    58004284       23344  1.4398674E+08
+  NOTICE   main:            5    58004286       23536  1.4513837E+08
+  NOTICE   main:            5    58004288       23728  1.4628677E+08
+  NOTICE   main:            5    58004290       23920  1.4744237E+08
+  NOTICE   main:            5    58004292       24112  1.4860723E+08
+  NOTICE   main:            5    58004294       24304  1.4976355E+08
+  NOTICE   main:            5    58004296       24496  1.5091168E+08
+  NOTICE   main:            5    58004298       24688  1.5206288E+08
+  NOTICE   main:            5    58004300       24880  1.5321264E+08
+  NOTICE   main:            5    58004302       25072  1.5435952E+08
+  NOTICE   main:            5    58004304       25264  1.5551050E+08
+  NOTICE metsub: (kg ,xyr,xy1) -     1   32   24  328  142 shift
+  NOTICE metsub: switch to global grid
+  NOTICE advpnt: (kg,nx,ny,nz) -     1  360  181   34
+  NOTICE metgrd: (kg, xyr,xy1) -     1  360  181    1    1
+  NOTICE metinp: GDAS 1 8857  360  181    1    1 58004280 10  4 14 18
+  NOTICE metinp: GDAS 1 9021  360  181    1    1 58004460 10  4 14 21
+  NOTICE   main:            5    58004306       25456  1.5665437E+08
+  NOTICE   main:            5    58004308       25648  1.5779534E+08
+  NOTICE   main:            5    58004310       25840  1.5893805E+08
+  NOTICE   main:            5    58004312       26032  1.6008061E+08
+  NOTICE   main:            5    58004314       26224  1.6122096E+08
+  NOTICE   main:            5    58004316       26416  1.6235862E+08
+  NOTICE   main:            5    58004318       26608  1.6349638E+08
+  NOTICE   main:            5    58004320       26800  1.6463728E+08
+  NOTICE   main:            5    58004322       26992  1.6578333E+08
+  NOTICE   main:            5    58004324       27184  1.6693312E+08
+  NOTICE   main:            5    58004326       27376  1.6808365E+08
+  NOTICE   main:            5    58004328       27568  1.6923629E+08
+  NOTICE   main:            5    58004330       27760  1.7038525E+08
+  NOTICE   main:            5    58004332       27952  1.7152800E+08
+  NOTICE   main:            5    58004334       28144  1.7266880E+08
+  NOTICE   main:            5    58004336       28336  1.7381301E+08
+  NOTICE   main:            5    58004338       28528  1.7494995E+08
+  NOTICE   main:            5    58004340       28720  1.7608598E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:            6    58004342       28912  1.7722896E+08
+  NOTICE   main:            6    58004344       29104  1.7836634E+08
+  NOTICE   main:            6    58004346       29296  1.7949661E+08
+  NOTICE   main:            6    58004348       29488  1.8062954E+08
+  NOTICE   main:            6    58004350       29680  1.8176861E+08
+  NOTICE   main:            6    58004352       29872  1.8290154E+08
+  NOTICE   main:            6    58004354       30064  1.8402816E+08
+  NOTICE   main:            6    58004356       30256  1.8515757E+08
+  NOTICE   main:            6    58004358       30448  1.8628707E+08
+  NOTICE   main:            6    58004360       30640  1.8742259E+08
+  NOTICE   main:            6    58004362       30832  1.8855592E+08
+  NOTICE   main:            6    58004364       31024  1.8968464E+08
+  NOTICE   main:            6    58004366       31216  1.9081531E+08
+  NOTICE   main:            6    58004368       31408  1.9194736E+08
+  NOTICE   main:            6    58004370       31600  1.9307790E+08
+  NOTICE   main:            6    58004372       31792  1.9420778E+08
+  NOTICE   main:            6    58004374       31984  1.9533653E+08
+  NOTICE   main:            6    58004376       32176  1.9646438E+08
+  NOTICE   main:            6    58004378       32368  1.9759475E+08
+  NOTICE   main:            6    58004380       32560  1.9872040E+08
+  NOTICE   main:            6    58004382       32752  1.9984298E+08
+  NOTICE   main:            6    58004384       32944  2.0097123E+08
+  NOTICE   main:            6    58004386       33136  2.0208621E+08
+  NOTICE   main:            6    58004388       33328  2.0320662E+08
+  NOTICE   main:            6    58004390       33520  2.0432790E+08
+  NOTICE   main:            6    58004392       33712  2.0544886E+08
+  NOTICE   main:            6    58004394       33904  2.0656459E+08
+  NOTICE   main:            6    58004396       34096  2.0766963E+08
+  NOTICE   main:            6    58004398       34288  2.0877360E+08
+  NOTICE condsk:  1 output at    4  14  20   0
+  NOTICE   main:            6    58004400       34480  2.0988528E+08
+  NOTICE parout:   10   4  14  20   0    Num=   34480
+                                                        Index  Height %Mass
+                                                           19 10360.0  0.43
+                                                           18  9275.0  6.59
+                                                           17  8250.0  9.32
+                                                           16  7285.0  9.76
+                                                           15  6380.0  8.20
+                                                           14  5535.0  9.21
+                                                           13  4750.0  8.51
+                                                           12  4025.0  7.51
+                                                           11  3360.0  6.73
+                                                           10  2755.0  5.25
+                                                            9  2210.0  4.66
+                                                            8  1725.0  4.42
+                                                            7  1300.0  4.12
+                                                            6   935.0  4.15
+                                                            5   630.0  3.59
+                                                            4   385.0  3.23
+                                                            3   200.0  2.09
+                                                            2    75.0  1.61
+                                                            1    10.0  0.60
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE emspnt: emissions terminated
+  NOTICE   main:            7    58004402       34480  2.0980432E+08
+  NOTICE   main:            7    58004404       34480  2.0972387E+08
+  NOTICE   main:            7    58004406       34480  2.0964653E+08
+  NOTICE   main:            7    58004408       34480  2.0956744E+08
+  NOTICE   main:            7    58004410       34480  2.0948536E+08
+  NOTICE   main:            7    58004412       34480  2.0939749E+08
+  NOTICE   main:            7    58004414       34480  2.0931203E+08
+  NOTICE   main:            7    58004416       34480  2.0922920E+08
+  NOTICE   main:            7    58004418       34480  2.0914382E+08
+  NOTICE   main:            7    58004420       34480  2.0906213E+08
+  NOTICE   main:            7    58004422       34480  2.0897693E+08
+  NOTICE   main:            7    58004424       34480  2.0889054E+08
+  NOTICE   main:            7    58004426       34480  2.0880800E+08
+  NOTICE   main:            7    58004428       34480  2.0872765E+08
+  NOTICE   main:            7    58004430       34480  2.0864890E+08
+  NOTICE   main:            7    58004432       34480  2.0856723E+08
+  NOTICE   main:            7    58004434       34480  2.0848451E+08
+  NOTICE   main:            7    58004436       34480  2.0840602E+08
+  NOTICE   main:            7    58004438       34480  2.0833110E+08
+  NOTICE   main:            7    58004440       34480  2.0824938E+08
+  NOTICE   main:            7    58004442       34480  2.0816256E+08
+  NOTICE   main:            7    58004444       34480  2.0807712E+08
+  NOTICE   main:            7    58004446       34480  2.0798867E+08
+  NOTICE   main:            7    58004448       34480  2.0789968E+08
+  NOTICE   main:            7    58004450       34480  2.0780813E+08
+  NOTICE   main:            7    58004452       34480  2.0771456E+08
+  NOTICE   main:            7    58004454       34480  2.0761738E+08
+  NOTICE   main:            7    58004456       34480  2.0752266E+08
+  NOTICE   main:            7    58004458       34480  2.0743133E+08
+  NOTICE   main:            7    58004460       34480  2.0734077E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (kgx,kt1,kt2) -            1           2           3
+  NOTICE metpos: (mtime,ftime) -     58004640    58004280
+  NOTICE metinp: GDAS 1    1  360  181    1    1 58004640 10  4 15  0
+  NOTICE   main:            8    58004462       34480  2.0724344E+08
+  NOTICE   main:            8    58004464       34480  2.0714763E+08
+  NOTICE   main:            8    58004466       34480  2.0705893E+08
+  NOTICE   main:            8    58004468       34480  2.0696485E+08
+  NOTICE   main:            8    58004470       34480  2.0687022E+08
+  NOTICE   main:            8    58004472       34480  2.0677262E+08
+  NOTICE   main:            8    58004474       34480  2.0667605E+08
+  NOTICE   main:            8    58004476       34480  2.0657397E+08
+  NOTICE   main:            8    58004478       34480  2.0647654E+08
+  NOTICE   main:            8    58004480       34480  2.0637894E+08
+  NOTICE   main:            8    58004482       34480  2.0627834E+08
+  NOTICE   main:            8    58004484       34480  2.0617806E+08
+  NOTICE   main:            8    58004486       34480  2.0608258E+08
+  NOTICE   main:            8    58004488       34480  2.0598994E+08
+  NOTICE   main:            8    58004490       34480  2.0589976E+08
+  NOTICE   main:            8    58004492       34480  2.0580909E+08
+  NOTICE   main:            8    58004494       34480  2.0572133E+08
+  NOTICE   main:            8    58004496       34480  2.0563190E+08
+  NOTICE   main:            8    58004498       34480  2.0554819E+08
+  NOTICE   main:            8    58004500       34480  2.0545830E+08
+  NOTICE   main:            8    58004502       34480  2.0536704E+08
+  NOTICE   main:            8    58004504       34480  2.0527824E+08
+  NOTICE   main:            8    58004506       34480  2.0519078E+08
+  NOTICE   main:            8    58004508       34480  2.0510750E+08
+  NOTICE   main:            8    58004510       34480  2.0501710E+08
+  NOTICE   main:            8    58004512       34480  2.0492909E+08
+  NOTICE   main:            8    58004514       34480  2.0483320E+08
+  NOTICE   main:            8    58004516       34480  2.0473627E+08
+  NOTICE   main:            8    58004518       34480  2.0464326E+08
+  NOTICE   main:            8    58004520       34480  2.0455054E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:            9    58004522       34480  2.0445638E+08
+  NOTICE   main:            9    58004524       34480  2.0436486E+08
+  NOTICE   main:            9    58004526       34480  2.0427331E+08
+  NOTICE   main:            9    58004528       34480  2.0418458E+08
+  NOTICE   main:            9    58004530       34480  2.0410347E+08
+  NOTICE   main:            9    58004532       34480  2.0401816E+08
+  NOTICE   main:            9    58004534       34480  2.0393435E+08
+  NOTICE   main:            9    58004536       34480  2.0384872E+08
+  NOTICE   main:            9    58004538       34480  2.0376310E+08
+  NOTICE   main:            9    58004540       34480  2.0367216E+08
+  NOTICE   main:            9    58004542       34480  2.0358005E+08
+  NOTICE   main:            9    58004544       34480  2.0349451E+08
+  NOTICE   main:            9    58004546       34480  2.0341242E+08
+  NOTICE   main:            9    58004548       34480  2.0332213E+08
+  NOTICE   main:            9    58004550       34480  2.0322629E+08
+  NOTICE   main:            9    58004552       34480  2.0313886E+08
+  NOTICE   main:            9    58004554       34480  2.0305528E+08
+  NOTICE   main:            9    58004556       34480  2.0297472E+08
+  NOTICE   main:            9    58004558       34480  2.0289114E+08
+  NOTICE   main:            9    58004560       34480  2.0280379E+08
+  NOTICE   main:            9    58004562       34480  2.0270872E+08
+  NOTICE   main:            9    58004564       34480  2.0261573E+08
+  NOTICE   main:            9    58004566       34480  2.0252325E+08
+  NOTICE   main:            9    58004568       34480  2.0242709E+08
+  NOTICE   main:            9    58004570       34480  2.0233282E+08
+  NOTICE   main:            9    58004572       34480  2.0223806E+08
+  NOTICE   main:            9    58004574       34480  2.0214106E+08
+  NOTICE   main:            9    58004576       34480  2.0204611E+08
+  NOTICE   main:            9    58004578       34480  2.0195398E+08
+  NOTICE   main:            9    58004580       34480  2.0186075E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           10    58004582       34480  2.0177006E+08
+  NOTICE   main:           10    58004584       34480  2.0168304E+08
+  NOTICE   main:           10    58004586       34480  2.0160010E+08
+  NOTICE   main:           10    58004588       34480  2.0152000E+08
+  NOTICE   main:           10    58004590       34480  2.0143466E+08
+  NOTICE   main:           10    58004592       34480  2.0135082E+08
+  NOTICE   main:           10    58004594       34480  2.0126507E+08
+  NOTICE   main:           10    58004596       34480  2.0118475E+08
+  NOTICE   main:           10    58004598       34480  2.0110434E+08
+  NOTICE   main:           10    58004600       34480  2.0102392E+08
+  NOTICE   main:           10    58004602       34480  2.0093986E+08
+  NOTICE   main:           10    58004604       34480  2.0085821E+08
+  NOTICE   main:           10    58004606       34480  2.0077597E+08
+  NOTICE   main:           10    58004608       34480  2.0069134E+08
+  NOTICE   main:           10    58004610       34480  2.0061266E+08
+  NOTICE   main:           10    58004612       34480  2.0053307E+08
+  NOTICE   main:           10    58004614       34480  2.0044747E+08
+  NOTICE   main:           10    58004616       34480  2.0036232E+08
+  NOTICE   main:           10    58004618       34480  2.0028018E+08
+  NOTICE   main:           10    58004620       34480  2.0019474E+08
+  NOTICE   main:           10    58004622       34480  2.0010432E+08
+  NOTICE   main:           10    58004624       34480  2.0001290E+08
+  NOTICE   main:           10    58004626       34480  1.9992954E+08
+  NOTICE   main:           10    58004628       34480  1.9984272E+08
+  NOTICE   main:           10    58004630       34480  1.9975416E+08
+  NOTICE   main:           10    58004632       34480  1.9966486E+08
+  NOTICE   main:           10    58004634       34480  1.9958117E+08
+  NOTICE   main:           10    58004636       34480  1.9949586E+08
+  NOTICE   main:           10    58004638       34480  1.9940720E+08
+  NOTICE   main:           10    58004640       34480  1.9932138E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58004820    58004460
+  NOTICE metinp: GDAS 1  165  360  181    1    1 58004820 10  4 15  3
+  NOTICE   main:           11    58004642       34480  1.9923651E+08
+  NOTICE metpos: closed unit -            1           2        1000
+  NOTICE   main:           11    58004644       34480  1.9915442E+08
+  NOTICE   main:           11    58004646       34480  1.9906963E+08
+  NOTICE   main:           11    58004648       34480  1.9898854E+08
+  NOTICE   main:           11    58004650       34480  1.9890426E+08
+  NOTICE   main:           11    58004652       34480  1.9882030E+08
+  NOTICE   main:           11    58004654       34480  1.9873147E+08
+  NOTICE   main:           11    58004656       34480  1.9864507E+08
+  NOTICE   main:           11    58004658       34480  1.9855827E+08
+  NOTICE   main:           11    58004660       34480  1.9846995E+08
+  NOTICE   main:           11    58004662       34480  1.9838182E+08
+  NOTICE   main:           11    58004664       34480  1.9829405E+08
+  NOTICE   main:           11    58004666       34480  1.9820538E+08
+  NOTICE   main:           11    58004668       34480  1.9811843E+08
+  NOTICE   main:           11    58004670       34480  1.9803432E+08
+  NOTICE   main:           11    58004672       34480  1.9795386E+08
+  NOTICE   main:           11    58004674       34480  1.9787584E+08
+  NOTICE   main:           11    58004676       34480  1.9779838E+08
+  NOTICE   main:           11    58004678       34480  1.9771728E+08
+  NOTICE   main:           11    58004680       34480  1.9763730E+08
+  NOTICE   main:           11    58004682       34480  1.9756107E+08
+  NOTICE   main:           11    58004684       34480  1.9748653E+08
+  NOTICE   main:           11    58004686       34480  1.9740496E+08
+  NOTICE   main:           11    58004688       34480  1.9732442E+08
+  NOTICE   main:           11    58004690       34480  1.9724232E+08
+  NOTICE   main:           11    58004692       34480  1.9716347E+08
+  NOTICE   main:           11    58004694       34480  1.9709317E+08
+  NOTICE   main:           11    58004696       34480  1.9702472E+08
+  NOTICE   main:           11    58004698       34480  1.9694990E+08
+  NOTICE   main:           11    58004700       34480  1.9687702E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           12    58004702       34480  1.9680334E+08
+  NOTICE   main:           12    58004704       34480  1.9672651E+08
+  NOTICE   main:           12    58004706       34480  1.9664867E+08
+  NOTICE   main:           12    58004708       34480  1.9657096E+08
+  NOTICE   main:           12    58004710       34480  1.9649794E+08
+  NOTICE   main:           12    58004712       34480  1.9642120E+08
+  NOTICE   main:           12    58004714       34480  1.9634210E+08
+  NOTICE   main:           12    58004716       34480  1.9626501E+08
+  NOTICE   main:           12    58004718       34480  1.9618603E+08
+  NOTICE   main:           12    58004720       34480  1.9611325E+08
+  NOTICE   main:           12    58004722       34480  1.9603906E+08
+  NOTICE   main:           12    58004724       34480  1.9596366E+08
+  NOTICE   main:           12    58004726       34480  1.9589019E+08
+  NOTICE   main:           12    58004728       34480  1.9581730E+08
+  NOTICE   main:           12    58004730       34480  1.9574699E+08
+  NOTICE   main:           12    58004732       34480  1.9567669E+08
+  NOTICE   main:           12    58004734       34480  1.9561160E+08
+  NOTICE   main:           12    58004736       34480  1.9554694E+08
+  NOTICE   main:           12    58004738       34480  1.9547829E+08
+  NOTICE   main:           12    58004740       34480  1.9541427E+08
+  NOTICE   main:           12    58004742       34480  1.9534318E+08
+  NOTICE   main:           12    58004744       34480  1.9527803E+08
+  NOTICE   main:           12    58004746       34480  1.9521437E+08
+  NOTICE   main:           12    58004748       34480  1.9515250E+08
+  NOTICE   main:           12    58004750       34480  1.9509104E+08
+  NOTICE   main:           12    58004752       34480  1.9502603E+08
+  NOTICE   main:           12    58004754       34480  1.9496085E+08
+  NOTICE   main:           12    58004756       34480  1.9489110E+08
+  NOTICE   main:           12    58004758       34480  1.9482317E+08
+  NOTICE condsk:  1 output at    4  15   2   0
+  NOTICE   main:           12    58004760       34480  1.9476005E+08
+  NOTICE parout:   10   4  15   2   0    Num=   34480
+                                                        Index  Height %Mass
+                                                           20 11505.0  0.06
+                                                           19 10360.0  0.31
+                                                           18  9275.0  2.26
+                                                           17  8250.0  6.74
+                                                           16  7285.0  8.42
+                                                           15  6380.0  8.19
+                                                           14  5535.0  6.16
+                                                           13  4750.0  7.07
+                                                           12  4025.0 11.28
+                                                           11  3360.0  9.89
+                                                           10  2755.0  8.70
+                                                            9  2210.0  6.51
+                                                            8  1725.0  5.32
+                                                            7  1300.0  3.71
+                                                            6   935.0  3.62
+                                                            5   630.0  3.71
+                                                            4   385.0  3.36
+                                                            3   200.0  2.61
+                                                            2    75.0  1.51
+                                                            1    10.0  0.56
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           13    58004763       34480  1.9466171E+08
+  NOTICE   main:           13    58004766       34480  1.9456363E+08
+  NOTICE   main:           13    58004769       34480  1.9447406E+08
+  NOTICE   main:           13    58004772       34480  1.9438219E+08
+  NOTICE   main:           13    58004775       34480  1.9429552E+08
+  NOTICE   main:           13    58004778       34480  1.9420299E+08
+  NOTICE   main:           13    58004781       34480  1.9410758E+08
+  NOTICE   main:           13    58004784       34480  1.9400272E+08
+  NOTICE   main:           13    58004787       34480  1.9390072E+08
+  NOTICE   main:           13    58004790       34480  1.9380758E+08
+  NOTICE   main:           13    58004793       34480  1.9370910E+08
+  NOTICE   main:           13    58004796       34480  1.9361706E+08
+  NOTICE   main:           13    58004799       34480  1.9351906E+08
+  NOTICE   main:           13    58004802       34480  1.9341822E+08
+  NOTICE   main:           13    58004805       34480  1.9332437E+08
+  NOTICE   main:           13    58004808       34480  1.9322645E+08
+  NOTICE   main:           13    58004811       34480  1.9313104E+08
+  NOTICE   main:           13    58004814       34480  1.9303206E+08
+  NOTICE   main:           13    58004817       34480  1.9293011E+08
+  NOTICE   main:           13    58004820       34480  1.9283202E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58005000    58004640
+  NOTICE metinp: GDAS 1  329  360  181    1    1 58005000 10  4 15  6
+  NOTICE   main:           14    58004823       34480  1.9273027E+08
+  NOTICE   main:           14    58004826       34480  1.9262318E+08
+  NOTICE   main:           14    58004829       34480  1.9251214E+08
+  NOTICE   main:           14    58004832       34480  1.9240882E+08
+  NOTICE   main:           14    58004835       34480  1.9231027E+08
+  NOTICE   main:           14    58004838       34480  1.9220990E+08
+  NOTICE   main:           14    58004841       34480  1.9210349E+08
+  NOTICE   main:           14    58004844       34480  1.9199762E+08
+  NOTICE   main:           14    58004847       34480  1.9189776E+08
+  NOTICE   main:           14    58004850       34480  1.9180200E+08
+  NOTICE   main:           14    58004853       34480  1.9170674E+08
+  NOTICE   main:           14    58004856       34480  1.9160638E+08
+  NOTICE   main:           14    58004859       34480  1.9150160E+08
+  NOTICE   main:           14    58004862       34480  1.9140373E+08
+  NOTICE   main:           14    58004865       34480  1.9130666E+08
+  NOTICE   main:           14    58004868       34480  1.9120010E+08
+  NOTICE   main:           14    58004871       34480  1.9109597E+08
+  NOTICE   main:           14    58004874       34480  1.9099789E+08
+  NOTICE   main:           14    58004877       34480  1.9090450E+08
+  NOTICE   main:           14    58004880       34480  1.9081077E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           15    58004883       34480  1.9071998E+08
+  NOTICE   main:           15    58004886       34480  1.9063400E+08
+  NOTICE   main:           15    58004889       34480  1.9054768E+08
+  NOTICE   main:           15    58004892       34480  1.9045494E+08
+  NOTICE   main:           15    58004895       34480  1.9036022E+08
+  NOTICE   main:           15    58004898       34480  1.9027760E+08
+  NOTICE   main:           15    58004901       34480  1.9019510E+08
+  NOTICE   main:           15    58004904       34480  1.9011322E+08
+  NOTICE   main:           15    58004907       34480  1.9002914E+08
+  NOTICE   main:           15    58004910       34480  1.8993270E+08
+  NOTICE   main:           15    58004913       34480  1.8983642E+08
+  NOTICE   main:           15    58004916       34480  1.8974646E+08
+  NOTICE   main:           15    58004919       34480  1.8965699E+08
+  NOTICE   main:           15    58004922       34480  1.8956394E+08
+  NOTICE   main:           15    58004925       34480  1.8947085E+08
+  NOTICE   main:           15    58004928       34480  1.8936768E+08
+  NOTICE   main:           15    58004931       34480  1.8926590E+08
+  NOTICE   main:           15    58004934       34480  1.8916869E+08
+  NOTICE   main:           15    58004937       34480  1.8906848E+08
+  NOTICE   main:           15    58004940       34480  1.8896754E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           16    58004943       34480  1.8887666E+08
+  NOTICE   main:           16    58004946       34480  1.8879094E+08
+  NOTICE   main:           16    58004949       34480  1.8871424E+08
+  NOTICE   main:           16    58004952       34480  1.8862438E+08
+  NOTICE   main:           16    58004955       34480  1.8853678E+08
+  NOTICE   main:           16    58004958       34480  1.8845445E+08
+  NOTICE   main:           16    58004961       34480  1.8837270E+08
+  NOTICE   main:           16    58004964       34480  1.8828541E+08
+  NOTICE   main:           16    58004967       34480  1.8819499E+08
+  NOTICE   main:           16    58004970       34480  1.8810789E+08
+  NOTICE   main:           16    58004973       34480  1.8801368E+08
+  NOTICE   main:           16    58004976       34480  1.8792510E+08
+  NOTICE   main:           16    58004979       34480  1.8784573E+08
+  NOTICE   main:           16    58004982       34480  1.8775670E+08
+  NOTICE   main:           16    58004985       34480  1.8767358E+08
+  NOTICE   main:           16    58004988       34480  1.8758992E+08
+  NOTICE   main:           16    58004991       34480  1.8749939E+08
+  NOTICE   main:           16    58004994       34480  1.8741043E+08
+  NOTICE   main:           16    58004997       34480  1.8731976E+08
+  NOTICE   main:           16    58005000       34480  1.8723181E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58005180    58004820
+  NOTICE metinp: GDAS 1  493  360  181    1    1 58005180 10  4 15  9
+  NOTICE   main:           17    58005003       34480  1.8715046E+08
+  NOTICE   main:           17    58005006       34480  1.8706998E+08
+  NOTICE   main:           17    58005009       34480  1.8699040E+08
+  NOTICE   main:           17    58005012       34480  1.8691661E+08
+  NOTICE   main:           17    58005015       34480  1.8684040E+08
+  NOTICE   main:           17    58005018       34480  1.8676389E+08
+  NOTICE   main:           17    58005021       34480  1.8668795E+08
+  NOTICE   main:           17    58005024       34480  1.8660934E+08
+  NOTICE   main:           17    58005027       34480  1.8652542E+08
+  NOTICE   main:           17    58005030       34480  1.8643886E+08
+  NOTICE   main:           17    58005033       34480  1.8634470E+08
+  NOTICE   main:           17    58005036       34480  1.8625270E+08
+  NOTICE   main:           17    58005039       34480  1.8617152E+08
+  NOTICE   main:           17    58005042       34480  1.8609235E+08
+  NOTICE   main:           17    58005045       34480  1.8600950E+08
+  NOTICE   main:           17    58005048       34480  1.8593010E+08
+  NOTICE   main:           17    58005051       34480  1.8585342E+08
+  NOTICE   main:           17    58005054       34480  1.8577099E+08
+  NOTICE   main:           17    58005057       34480  1.8568176E+08
+  NOTICE   main:           17    58005060       34480  1.8558043E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           18    58005063       34480  1.8548779E+08
+  NOTICE   main:           18    58005066       34480  1.8539958E+08
+  NOTICE   main:           18    58005069       34480  1.8530997E+08
+  NOTICE   main:           18    58005072       34480  1.8521995E+08
+  NOTICE   main:           18    58005075       34480  1.8514123E+08
+  NOTICE   main:           18    58005078       34480  1.8506014E+08
+  NOTICE   main:           18    58005081       34480  1.8498014E+08
+  NOTICE   main:           18    58005084       34480  1.8489829E+08
+  NOTICE   main:           18    58005087       34480  1.8481562E+08
+  NOTICE   main:           18    58005090       34480  1.8473443E+08
+  NOTICE   main:           18    58005093       34480  1.8464640E+08
+  NOTICE   main:           18    58005096       34480  1.8457536E+08
+  NOTICE   main:           18    58005099       34480  1.8449731E+08
+  NOTICE   main:           18    58005102       34480  1.8441346E+08
+  NOTICE   main:           18    58005105       34480  1.8433173E+08
+  NOTICE   main:           18    58005108       34480  1.8424806E+08
+  NOTICE   main:           18    58005111       34480  1.8416770E+08
+  NOTICE   main:           18    58005114       34480  1.8409544E+08
+  NOTICE   main:           18    58005117       34480  1.8402805E+08
+  NOTICE condsk:  1 output at    4  15   8   0
+  NOTICE   main:           18    58005120       34480  1.8395890E+08
+  NOTICE parout:   10   4  15   8   0    Num=   34480
+                                                        Index  Height %Mass
+                                                           20 11505.0  0.05
+                                                           19 10360.0  0.42
+                                                           18  9275.0  2.14
+                                                           17  8250.0  3.89
+                                                           16  7285.0  5.85
+                                                           15  6380.0  6.28
+                                                           14  5535.0  6.02
+                                                           13  4750.0  6.10
+                                                           12  4025.0  7.50
+                                                           11  3360.0 10.54
+                                                           10  2755.0 12.74
+                                                            9  2210.0  9.76
+                                                            8  1725.0  8.09
+                                                            7  1300.0  5.28
+                                                            6   935.0  4.16
+                                                            5   630.0  3.96
+                                                            4   385.0  3.22
+                                                            3   200.0  2.26
+                                                            2    75.0  1.26
+                                                            1    10.0  0.49
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           19    58005123       34480  1.8388622E+08
+  NOTICE   main:           19    58005126       34480  1.8381667E+08
+  NOTICE   main:           19    58005129       34480  1.8373738E+08
+  NOTICE   main:           19    58005132       34480  1.8365733E+08
+  NOTICE   main:           19    58005135       34480  1.8357848E+08
+  NOTICE   main:           19    58005138       34480  1.8350376E+08
+  NOTICE   main:           19    58005141       34480  1.8343197E+08
+  NOTICE   main:           19    58005144       34480  1.8336354E+08
+  NOTICE   main:           19    58005147       34480  1.8329178E+08
+  NOTICE   main:           19    58005150       34480  1.8321392E+08
+  NOTICE   main:           19    58005153       34480  1.8313416E+08
+  NOTICE   main:           19    58005156       34480  1.8305918E+08
+  NOTICE   main:           19    58005159       34480  1.8298410E+08
+  NOTICE   main:           19    58005162       34480  1.8290534E+08
+  NOTICE   main:           19    58005165       34480  1.8282952E+08
+  NOTICE   main:           19    58005168       34480  1.8276045E+08
+  NOTICE   main:           19    58005171       34480  1.8268298E+08
+  NOTICE   main:           19    58005174       34480  1.8261051E+08
+  NOTICE   main:           19    58005177       34480  1.8254154E+08
+  NOTICE   main:           19    58005180       34480  1.8246664E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58005360    58005000
+  NOTICE metinp: GDAS 1  657  360  181    1    1 58005360 10  4 15 12
+  NOTICE   main:           20    58005183       34480  1.8237949E+08
+  NOTICE   main:           20    58005186       34480  1.8229483E+08
+  NOTICE   main:           20    58005189       34480  1.8221126E+08
+  NOTICE   main:           20    58005192       34480  1.8213107E+08
+  NOTICE   main:           20    58005195       34480  1.8205130E+08
+  NOTICE   main:           20    58005198       34480  1.8197934E+08
+  NOTICE   main:           20    58005201       34480  1.8190538E+08
+  NOTICE   main:           20    58005204       34480  1.8183136E+08
+  NOTICE   main:           20    58005207       34480  1.8176256E+08
+  NOTICE   main:           20    58005210       34480  1.8168442E+08
+  NOTICE   main:           20    58005213       34480  1.8161174E+08
+  NOTICE   main:           20    58005216       34480  1.8153776E+08
+  NOTICE   main:           20    58005219       34480  1.8146050E+08
+  NOTICE   main:           20    58005222       34480  1.8138795E+08
+  NOTICE   main:           20    58005225       34480  1.8131568E+08
+  NOTICE   main:           20    58005228       34480  1.8123981E+08
+  NOTICE   main:           20    58005231       34480  1.8116147E+08
+  NOTICE   main:           20    58005234       34480  1.8108666E+08
+  NOTICE   main:           20    58005237       34480  1.8100496E+08
+  NOTICE   main:           20    58005240       34480  1.8092195E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           21    58005243       34480  1.8084750E+08
+  NOTICE   main:           21    58005246       34480  1.8077486E+08
+  NOTICE   main:           21    58005249       34480  1.8070418E+08
+  NOTICE   main:           21    58005252       34480  1.8062936E+08
+  NOTICE   main:           21    58005255       34480  1.8055522E+08
+  NOTICE   main:           21    58005258       34480  1.8048218E+08
+  NOTICE   main:           21    58005261       34480  1.8040667E+08
+  NOTICE   main:           21    58005264       34480  1.8032594E+08
+  NOTICE   main:           21    58005267       34480  1.8025179E+08
+  NOTICE   main:           21    58005270       34480  1.8018056E+08
+  NOTICE   main:           21    58005273       34480  1.8012034E+08
+  NOTICE   main:           21    58005276       34480  1.8006341E+08
+  NOTICE   main:           21    58005279       34480  1.8000584E+08
+  NOTICE   main:           21    58005282       34480  1.7994912E+08
+  NOTICE   main:           21    58005285       34480  1.7989654E+08
+  NOTICE   main:           21    58005288       34480  1.7983139E+08
+  NOTICE   main:           21    58005291       34480  1.7976162E+08
+  NOTICE   main:           21    58005294       34480  1.7969414E+08
+  NOTICE   main:           21    58005297       34480  1.7962934E+08
+  NOTICE   main:           21    58005300       34480  1.7957000E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           22    58005302       34480  1.7952590E+08
+  NOTICE   main:           22    58005304       34480  1.7948360E+08
+  NOTICE   main:           22    58005306       34480  1.7943906E+08
+  NOTICE   main:           22    58005308       34480  1.7939587E+08
+  NOTICE   main:           22    58005310       34480  1.7935342E+08
+  NOTICE   main:           22    58005312       34480  1.7931149E+08
+  NOTICE   main:           22    58005314       34480  1.7927088E+08
+  NOTICE   main:           22    58005316       34480  1.7922795E+08
+  NOTICE   main:           22    58005318       34480  1.7918261E+08
+  NOTICE   main:           22    58005320       34480  1.7913563E+08
+  NOTICE   main:           22    58005322       34480  1.7908853E+08
+  NOTICE   main:           22    58005324       34480  1.7904046E+08
+  NOTICE   main:           22    58005326       34480  1.7898902E+08
+  NOTICE   main:           22    58005328       34480  1.7893890E+08
+  NOTICE   main:           22    58005330       34480  1.7888602E+08
+  NOTICE   main:           22    58005332       34480  1.7883400E+08
+  NOTICE   main:           22    58005334       34480  1.7878765E+08
+  NOTICE   main:           22    58005336       34480  1.7874342E+08
+  NOTICE   main:           22    58005338       34480  1.7870030E+08
+  NOTICE   main:           22    58005340       34480  1.7865597E+08
+  NOTICE   main:           22    58005342       34480  1.7861651E+08
+  NOTICE   main:           22    58005344       34480  1.7857328E+08
+  NOTICE   main:           22    58005346       34480  1.7853061E+08
+  NOTICE   main:           22    58005348       34480  1.7849550E+08
+  NOTICE   main:           22    58005350       34480  1.7845757E+08
+  NOTICE   main:           22    58005352       34480  1.7841834E+08
+  NOTICE   main:           22    58005354       34480  1.7837667E+08
+  NOTICE   main:           22    58005356       34480  1.7833800E+08
+  NOTICE   main:           22    58005358       34480  1.7830021E+08
+  NOTICE   main:           22    58005360       34480  1.7826158E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58005540    58005180
+  NOTICE metinp: GDAS 1  821  360  181    1    1 58005540 10  4 15 15
+  NOTICE   main:           23    58005362       34480  1.7822213E+08
+  NOTICE   main:           23    58005364       34480  1.7817934E+08
+  NOTICE   main:           23    58005366       34480  1.7813323E+08
+  NOTICE   main:           23    58005368       34480  1.7808293E+08
+  NOTICE   main:           23    58005370       34480  1.7803363E+08
+  NOTICE   main:           23    58005372       34480  1.7798882E+08
+  NOTICE   main:           23    58005374       34480  1.7794501E+08
+  NOTICE   main:           23    58005376       34480  1.7790174E+08
+  NOTICE   main:           23    58005378       34480  1.7786155E+08
+  NOTICE   main:           23    58005380       34480  1.7782328E+08
+  NOTICE   main:           23    58005382       34480  1.7778813E+08
+  NOTICE   main:           23    58005384       34480  1.7774830E+08
+  NOTICE   main:           23    58005386       34480  1.7771056E+08
+  NOTICE   main:           23    58005388       34480  1.7766931E+08
+  NOTICE   main:           23    58005390       34480  1.7762811E+08
+  NOTICE   main:           23    58005392       34480  1.7758925E+08
+  NOTICE   main:           23    58005394       34480  1.7755240E+08
+  NOTICE   main:           23    58005396       34480  1.7751238E+08
+  NOTICE   main:           23    58005398       34480  1.7747525E+08
+  NOTICE   main:           23    58005400       34480  1.7743669E+08
+  NOTICE   main:           23    58005402       34480  1.7739938E+08
+  NOTICE   main:           23    58005404       34480  1.7736208E+08
+  NOTICE   main:           23    58005406       34480  1.7732166E+08
+  NOTICE   main:           23    58005408       34480  1.7728384E+08
+  NOTICE   main:           23    58005410       34480  1.7724704E+08
+  NOTICE   main:           23    58005412       34480  1.7721048E+08
+  NOTICE   main:           23    58005414       34480  1.7717550E+08
+  NOTICE   main:           23    58005416       34480  1.7714267E+08
+  NOTICE   main:           23    58005418       34480  1.7710808E+08
+  NOTICE   main:           23    58005420       34480  1.7707450E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           24    58005422       34480  1.7703755E+08
+  NOTICE   main:           24    58005424       34480  1.7699680E+08
+  NOTICE   main:           24    58005426       34480  1.7695922E+08
+  NOTICE   main:           24    58005428       34480  1.7692098E+08
+  NOTICE   main:           24    58005430       34480  1.7688525E+08
+  NOTICE   main:           24    58005432       34480  1.7685168E+08
+  NOTICE   main:           24    58005434       34480  1.7681632E+08
+  NOTICE   main:           24    58005436       34480  1.7677954E+08
+  NOTICE   main:           24    58005438       34480  1.7674280E+08
+  NOTICE   main:           24    58005440       34480  1.7670269E+08
+  NOTICE   main:           24    58005442       34480  1.7666250E+08
+  NOTICE   main:           24    58005444       34480  1.7662018E+08
+  NOTICE   main:           24    58005446       34480  1.7657835E+08
+  NOTICE   main:           24    58005448       34480  1.7653619E+08
+  NOTICE   main:           24    58005450       34480  1.7649646E+08
+  NOTICE   main:           24    58005452       34480  1.7645661E+08
+  NOTICE   main:           24    58005454       34480  1.7641630E+08
+  NOTICE   main:           24    58005456       34480  1.7637498E+08
+  NOTICE   main:           24    58005458       34480  1.7633357E+08
+  NOTICE   main:           24    58005460       34480  1.7629589E+08
+  NOTICE   main:           24    58005462       34480  1.7625482E+08
+  NOTICE   main:           24    58005464       34480  1.7621315E+08
+  NOTICE   main:           24    58005466       34480  1.7617237E+08
+  NOTICE   main:           24    58005468       34480  1.7613029E+08
+  NOTICE   main:           24    58005470       34480  1.7608843E+08
+  NOTICE   main:           24    58005472       34480  1.7604632E+08
+  NOTICE   main:           24    58005474       34480  1.7600590E+08
+  NOTICE   main:           24    58005476       34480  1.7596613E+08
+  NOTICE   main:           24    58005478       34480  1.7592467E+08
+  NOTICE condsk:  1 output at    4  15  14   0
+  NOTICE   main:           24    58005480       34480  1.7587926E+08
+  NOTICE parout:   10   4  15  14   0    Num=   34480
+                                                        Index  Height %Mass
+                                                           20 11505.0  0.04
+                                                           19 10360.0  0.48
+                                                           18  9275.0  2.67
+                                                           17  8250.0  3.53
+                                                           16  7285.0  5.06
+                                                           15  6380.0  4.83
+                                                           14  5535.0  4.94
+                                                           13  4750.0  5.37
+                                                           12  4025.0  5.82
+                                                           11  3360.0  7.80
+                                                           10  2755.0  9.60
+                                                            9  2210.0 11.09
+                                                            8  1725.0 10.81
+                                                            7  1300.0  8.96
+                                                            6   935.0  8.45
+                                                            5   630.0  4.81
+                                                            4   385.0  2.74
+                                                            3   200.0  1.69
+                                                            2    75.0  0.88
+                                                            1    10.0  0.44
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           25    58005482       34480  1.7583590E+08
+  NOTICE   main:           25    58005484       34480  1.7579021E+08
+  NOTICE   main:           25    58005486       34480  1.7574640E+08
+  NOTICE   main:           25    58005488       34480  1.7570296E+08
+  NOTICE   main:           25    58005490       34480  1.7565874E+08
+  NOTICE   main:           25    58005492       34480  1.7561813E+08
+  NOTICE   main:           25    58005494       34480  1.7557605E+08
+  NOTICE   main:           25    58005496       34480  1.7553323E+08
+  NOTICE   main:           25    58005498       34480  1.7549298E+08
+  NOTICE   main:           25    58005500       34480  1.7545290E+08
+  NOTICE   main:           25    58005502       34480  1.7541430E+08
+  NOTICE   main:           25    58005504       34480  1.7537493E+08
+  NOTICE   main:           25    58005506       34480  1.7533594E+08
+  NOTICE   main:           25    58005508       34480  1.7529862E+08
+  NOTICE   main:           25    58005510       34480  1.7525930E+08
+  NOTICE   main:           25    58005512       34480  1.7522005E+08
+  NOTICE   main:           25    58005514       34480  1.7518149E+08
+  NOTICE   main:           25    58005516       34480  1.7514429E+08
+  NOTICE   main:           25    58005518       34480  1.7510832E+08
+  NOTICE   main:           25    58005520       34480  1.7507187E+08
+  NOTICE   main:           25    58005522       34480  1.7503150E+08
+  NOTICE   main:           25    58005524       34480  1.7498917E+08
+  NOTICE   main:           25    58005526       34480  1.7494811E+08
+  NOTICE   main:           25    58005528       34480  1.7491224E+08
+  NOTICE   main:           25    58005530       34480  1.7487357E+08
+  NOTICE   main:           25    58005532       34480  1.7483536E+08
+  NOTICE   main:           25    58005534       34480  1.7479734E+08
+  NOTICE   main:           25    58005536       34480  1.7476056E+08
+  NOTICE   main:           25    58005538       34480  1.7472339E+08
+  NOTICE   main:           25    58005540       34480  1.7467670E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58005720    58005360
+  NOTICE metinp: GDAS 1  985  360  181    1    1 58005720 10  4 15 18
+  NOTICE   main:           26    58005542       34480  1.7463126E+08
+  NOTICE   main:           26    58005544       34480  1.7458928E+08
+  NOTICE   main:           26    58005546       34480  1.7454752E+08
+  NOTICE   main:           26    58005548       34480  1.7450422E+08
+  NOTICE   main:           26    58005550       34480  1.7446507E+08
+  NOTICE   main:           26    58005552       34480  1.7442312E+08
+  NOTICE   main:           26    58005554       34480  1.7438037E+08
+  NOTICE   main:           26    58005556       34480  1.7433538E+08
+  NOTICE   main:           26    58005558       34480  1.7429802E+08
+  NOTICE   main:           26    58005560       34480  1.7425974E+08
+  NOTICE   main:           26    58005562       34480  1.7422213E+08
+  NOTICE   main:           26    58005564       34480  1.7418291E+08
+  NOTICE   main:           26    58005566       34480  1.7414229E+08
+  NOTICE   main:           26    58005568       34480  1.7410259E+08
+  NOTICE   main:           26    58005570       34480  1.7406098E+08
+  NOTICE   main:           26    58005572       34480  1.7401821E+08
+  NOTICE   main:           26    58005574       34480  1.7397590E+08
+  NOTICE   main:           26    58005576       34480  1.7393430E+08
+  NOTICE   main:           26    58005578       34480  1.7389238E+08
+  NOTICE   main:           26    58005580       34480  1.7384949E+08
+  NOTICE   main:           26    58005582       34480  1.7380432E+08
+  NOTICE   main:           26    58005584       34480  1.7376410E+08
+  NOTICE   main:           26    58005586       34480  1.7372669E+08
+  NOTICE   main:           26    58005588       34480  1.7368422E+08
+  NOTICE   main:           26    58005590       34480  1.7364437E+08
+  NOTICE   main:           26    58005592       34480  1.7360141E+08
+  NOTICE   main:           26    58005594       34480  1.7355704E+08
+  NOTICE   main:           26    58005596       34480  1.7351342E+08
+  NOTICE   main:           26    58005598       34480  1.7347174E+08
+  NOTICE   main:           26    58005600       34480  1.7343206E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           27    58005602       34480  1.7339176E+08
+  NOTICE   main:           27    58005604       34480  1.7335115E+08
+  NOTICE   main:           27    58005606       34480  1.7331059E+08
+  NOTICE   main:           27    58005608       34480  1.7326843E+08
+  NOTICE   main:           27    58005610       34480  1.7322210E+08
+  NOTICE   main:           27    58005612       34480  1.7317528E+08
+  NOTICE   main:           27    58005614       34480  1.7312971E+08
+  NOTICE   main:           27    58005616       34480  1.7308859E+08
+  NOTICE   main:           27    58005618       34480  1.7304870E+08
+  NOTICE   main:           27    58005620       34480  1.7300955E+08
+  NOTICE   main:           27    58005622       34480  1.7296738E+08
+  NOTICE   main:           27    58005624       34480  1.7292659E+08
+  NOTICE   main:           27    58005626       34480  1.7288710E+08
+  NOTICE   main:           27    58005628       34480  1.7284445E+08
+  NOTICE   main:           27    58005630       34480  1.7280304E+08
+  NOTICE   main:           27    58005632       34480  1.7275968E+08
+  NOTICE   main:           27    58005634       34480  1.7271515E+08
+  NOTICE   main:           27    58005636       34480  1.7266688E+08
+  NOTICE   main:           27    58005638       34480  1.7262112E+08
+  NOTICE   main:           27    58005640       34480  1.7257390E+08
+  NOTICE   main:           27    58005642       34480  1.7252512E+08
+  NOTICE   main:           27    58005644       34480  1.7247706E+08
+  NOTICE   main:           27    58005646       34480  1.7242994E+08
+  NOTICE   main:           27    58005648       34480  1.7238595E+08
+  NOTICE   main:           27    58005650       34480  1.7233459E+08
+  NOTICE   main:           27    58005652       34480  1.7228262E+08
+  NOTICE   main:           27    58005654       34480  1.7223331E+08
+  NOTICE   main:           27    58005656       34480  1.7218595E+08
+  NOTICE   main:           27    58005658       34480  1.7213978E+08
+  NOTICE   main:           27    58005660       34480  1.7209472E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           28    58005662       34480  1.7205003E+08
+  NOTICE   main:           28    58005664       34480  1.7200323E+08
+  NOTICE   main:           28    58005666       34480  1.7195720E+08
+  NOTICE   main:           28    58005668       34480  1.7191010E+08
+  NOTICE   main:           28    58005670       34480  1.7186539E+08
+  NOTICE   main:           28    58005672       34480  1.7181920E+08
+  NOTICE   main:           28    58005674       34480  1.7177094E+08
+  NOTICE   main:           28    58005676       34480  1.7172306E+08
+  NOTICE   main:           28    58005678       34480  1.7167258E+08
+  NOTICE   main:           28    58005680       34480  1.7162918E+08
+  NOTICE   main:           28    58005682       34480  1.7158306E+08
+  NOTICE   main:           28    58005684       34480  1.7153706E+08
+  NOTICE   main:           28    58005686       34480  1.7149099E+08
+  NOTICE   main:           28    58005688       34480  1.7144203E+08
+  NOTICE   main:           28    58005690       34480  1.7138741E+08
+  NOTICE   main:           28    58005692       34480  1.7133176E+08
+  NOTICE   main:           28    58005694       34480  1.7127600E+08
+  NOTICE   main:           28    58005696       34480  1.7122136E+08
+  NOTICE   main:           28    58005698       34480  1.7115738E+08
+  NOTICE   main:           28    58005700       34480  1.7109392E+08
+  NOTICE   main:           28    58005702       34480  1.7102778E+08
+  NOTICE   main:           28    58005704       34480  1.7096331E+08
+  NOTICE   main:           28    58005706       34480  1.7090232E+08
+  NOTICE   main:           28    58005708       34480  1.7084104E+08
+  NOTICE   main:           28    58005710       34480  1.7077960E+08
+  NOTICE   main:           28    58005712       34480  1.7072045E+08
+  NOTICE   main:           28    58005714       34480  1.7065925E+08
+  NOTICE   main:           28    58005716       34480  1.7059968E+08
+  NOTICE   main:           28    58005718       34480  1.7054274E+08
+  NOTICE   main:           28    58005720       34480  1.7048160E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58005900    58005540
+  NOTICE metinp: GDAS 1 1149  360  181    1    1 58005900 10  4 15 21
+  NOTICE   main:           29    58005722       34480  1.7042104E+08
+  NOTICE   main:           29    58005724       34480  1.7036069E+08
+  NOTICE   main:           29    58005726       34480  1.7030387E+08
+  NOTICE   main:           29    58005728       34480  1.7024563E+08
+  NOTICE   main:           29    58005730       34480  1.7018840E+08
+  NOTICE   main:           29    58005732       34480  1.7012768E+08
+  NOTICE   main:           29    58005734       34480  1.7006843E+08
+  NOTICE   main:           29    58005736       34480  1.7000581E+08
+  NOTICE   main:           29    58005738       34480  1.6993571E+08
+  NOTICE   main:           29    58005740       34480  1.6986582E+08
+  NOTICE   main:           29    58005742       34480  1.6979904E+08
+  NOTICE   main:           29    58005744       34480  1.6972995E+08
+  NOTICE   main:           29    58005746       34480  1.6966326E+08
+  NOTICE   main:           29    58005748       34480  1.6959738E+08
+  NOTICE   main:           29    58005750       34480  1.6952922E+08
+  NOTICE   main:           29    58005752       34480  1.6945147E+08
+  NOTICE   main:           29    58005754       34480  1.6937043E+08
+  NOTICE   main:           29    58005756       34480  1.6929194E+08
+  NOTICE   main:           29    58005758       34480  1.6922189E+08
+  NOTICE   main:           29    58005760       34480  1.6915374E+08
+  NOTICE   main:           29    58005762       34480  1.6908000E+08
+  NOTICE   main:           29    58005764       34480  1.6900846E+08
+  NOTICE   main:           29    58005766       34480  1.6893731E+08
+  NOTICE   main:           29    58005768       34480  1.6886334E+08
+  NOTICE   main:           29    58005770       34480  1.6879418E+08
+  NOTICE   main:           29    58005772       34480  1.6872178E+08
+  NOTICE   main:           29    58005774       34480  1.6864550E+08
+  NOTICE   main:           29    58005776       34480  1.6857646E+08
+  NOTICE   main:           29    58005778       34480  1.6850974E+08
+  NOTICE   main:           29    58005780       34480  1.6843928E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           30    58005782       34480  1.6836683E+08
+  NOTICE   main:           30    58005784       34480  1.6828880E+08
+  NOTICE   main:           30    58005786       34480  1.6821272E+08
+  NOTICE   main:           30    58005788       34480  1.6813491E+08
+  NOTICE   main:           30    58005790       34480  1.6805834E+08
+  NOTICE   main:           30    58005792       34480  1.6797851E+08
+  NOTICE   main:           30    58005794       34480  1.6789845E+08
+  NOTICE   main:           30    58005796       34480  1.6782272E+08
+  NOTICE   main:           30    58005798       34480  1.6774752E+08
+  NOTICE   main:           30    58005800       34480  1.6767350E+08
+  NOTICE   main:           30    58005802       34480  1.6759947E+08
+  NOTICE   main:           30    58005804       34480  1.6751902E+08
+  NOTICE   main:           30    58005806       34480  1.6742930E+08
+  NOTICE   main:           30    58005808       34480  1.6734526E+08
+  NOTICE   main:           30    58005810       34480  1.6725864E+08
+  NOTICE   main:           30    58005812       34480  1.6717237E+08
+  NOTICE   main:           30    58005814       34480  1.6708832E+08
+  NOTICE   main:           30    58005816       34480  1.6699891E+08
+  NOTICE   main:           30    58005818       34480  1.6690541E+08
+  NOTICE   main:           30    58005820       34480  1.6681435E+08
+  NOTICE   main:           30    58005822       34480  1.6673235E+08
+  NOTICE   main:           30    58005824       34480  1.6664757E+08
+  NOTICE   main:           30    58005826       34480  1.6656282E+08
+  NOTICE   main:           30    58005828       34480  1.6647768E+08
+  NOTICE   main:           30    58005830       34480  1.6639490E+08
+  NOTICE   main:           30    58005832       34480  1.6631128E+08
+  NOTICE   main:           30    58005834       34480  1.6622219E+08
+  NOTICE   main:           30    58005836       34480  1.6612246E+08
+  NOTICE   main:           30    58005838       34480  1.6602536E+08
+  NOTICE condsk:  1 output at    4  15  20   0
+  NOTICE   main:           30    58005840       34480  1.6592906E+08
+  NOTICE parout:   10   4  15  20   0    Num=   34480
+                                                        Index  Height %Mass
+                                                           20 11505.0  0.04
+                                                           19 10360.0  0.59
+                                                           18  9275.0  2.92
+                                                           17  8250.0  4.25
+                                                           16  7285.0  3.04
+                                                           15  6380.0  4.71
+                                                           14  5535.0  4.27
+                                                           13  4750.0  4.55
+                                                           12  4025.0  6.11
+                                                           11  3360.0  8.39
+                                                           10  2755.0  8.69
+                                                            9  2210.0  7.57
+                                                            8  1725.0  8.50
+                                                            7  1300.0  8.65
+                                                            6   935.0  7.99
+                                                            5   630.0  7.29
+                                                            4   385.0  6.05
+                                                            3   200.0  3.81
+                                                            2    75.0  1.96
+                                                            1    10.0  0.62
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           31    58005842       34480  1.6582482E+08
+  NOTICE   main:           31    58005844       34480  1.6572229E+08
+  NOTICE   main:           31    58005846       34480  1.6562160E+08
+  NOTICE   main:           31    58005848       34480  1.6552173E+08
+  NOTICE   main:           31    58005850       34480  1.6542563E+08
+  NOTICE   main:           31    58005852       34480  1.6532642E+08
+  NOTICE   main:           31    58005854       34480  1.6522597E+08
+  NOTICE   main:           31    58005856       34480  1.6512541E+08
+  NOTICE   main:           31    58005858       34480  1.6502120E+08
+  NOTICE   main:           31    58005860       34480  1.6491525E+08
+  NOTICE   main:           31    58005862       34480  1.6481149E+08
+  NOTICE   main:           31    58005864       34480  1.6470302E+08
+  NOTICE   main:           31    58005866       34480  1.6460170E+08
+  NOTICE   main:           31    58005868       34480  1.6449722E+08
+  NOTICE   main:           31    58005870       34480  1.6438712E+08
+  NOTICE   main:           31    58005872       34480  1.6427885E+08
+  NOTICE   main:           31    58005874       34480  1.6416469E+08
+  NOTICE   main:           31    58005876       34480  1.6405704E+08
+  NOTICE   main:           31    58005878       34480  1.6394277E+08
+  NOTICE   main:           31    58005880       34480  1.6382957E+08
+  NOTICE   main:           31    58005882       34480  1.6371202E+08
+  NOTICE   main:           31    58005884       34480  1.6359909E+08
+  NOTICE   main:           31    58005886       34480  1.6348710E+08
+  NOTICE   main:           31    58005888       34480  1.6336755E+08
+  NOTICE   main:           31    58005890       34480  1.6325227E+08
+  NOTICE   main:           31    58005892       34480  1.6312931E+08
+  NOTICE   main:           31    58005894       34480  1.6299590E+08
+  NOTICE   main:           31    58005896       34480  1.6286781E+08
+  NOTICE   main:           31    58005898       34480  1.6274163E+08
+  NOTICE   main:           31    58005900       34480  1.6261918E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58006080    58005720
+  NOTICE metinp: GDAS 1 1313  360  181    1    1 58006080 10  4 16  0
+  NOTICE   main:           32    58005902       34480  1.6249864E+08
+  NOTICE   main:           32    58005904       34480  1.6238090E+08
+  NOTICE   main:           32    58005906       34480  1.6226494E+08
+  NOTICE   main:           32    58005908       34480  1.6214525E+08
+  NOTICE   main:           32    58005910       34480  1.6201578E+08
+  NOTICE   main:           32    58005912       34480  1.6188330E+08
+  NOTICE   main:           32    58005914       34480  1.6175610E+08
+  NOTICE   main:           32    58005916       34480  1.6163525E+08
+  NOTICE   main:           32    58005918       34480  1.6151189E+08
+  NOTICE   main:           32    58005920       34480  1.6138683E+08
+  NOTICE   main:           32    58005922       34480  1.6125438E+08
+  NOTICE   main:           32    58005924       34480  1.6112320E+08
+  NOTICE   main:           32    58005926       34480  1.6099973E+08
+  NOTICE   main:           32    58005928       34480  1.6087778E+08
+  NOTICE   main:           32    58005930       34480  1.6075278E+08
+  NOTICE   main:           32    58005932       34480  1.6062453E+08
+  NOTICE   main:           32    58005934       34480  1.6049320E+08
+  NOTICE   main:           32    58005936       34480  1.6035774E+08
+  NOTICE   main:           32    58005938       34480  1.6022016E+08
+  NOTICE   main:           32    58005940       34480  1.6009434E+08
+  NOTICE   main:           32    58005942       34480  1.5997075E+08
+  NOTICE   main:           32    58005944       34480  1.5984749E+08
+  NOTICE   main:           32    58005946       34480  1.5971557E+08
+  NOTICE   main:           32    58005948       34480  1.5958517E+08
+  NOTICE   main:           32    58005950       34480  1.5945934E+08
+  NOTICE   main:           32    58005952       34480  1.5933226E+08
+  NOTICE   main:           32    58005954       34480  1.5920645E+08
+  NOTICE   main:           32    58005956       34480  1.5907510E+08
+  NOTICE   main:           32    58005958       34480  1.5893974E+08
+  NOTICE   main:           32    58005960       34480  1.5880211E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           33    58005962       34480  1.5866138E+08
+  NOTICE   main:           33    58005964       34480  1.5852224E+08
+  NOTICE   main:           33    58005966       34480  1.5839072E+08
+  NOTICE   main:           33    58005968       34480  1.5825989E+08
+  NOTICE   main:           33    58005970       34480  1.5812810E+08
+  NOTICE   main:           33    58005972       34480  1.5800222E+08
+  NOTICE   main:           33    58005974       34480  1.5787834E+08
+  NOTICE   main:           33    58005976       34480  1.5774888E+08
+  NOTICE   main:           33    58005978       34480  1.5761330E+08
+  NOTICE   main:           33    58005980       34480  1.5748811E+08
+  NOTICE   main:           33    58005982       34480  1.5736614E+08
+  NOTICE   main:           33    58005984       34480  1.5724144E+08
+  NOTICE   main:           33    58005986       34480  1.5711323E+08
+  NOTICE   main:           33    58005988       34480  1.5698874E+08
+  NOTICE   main:           33    58005990       34480  1.5686379E+08
+  NOTICE   main:           33    58005992       34480  1.5673190E+08
+  NOTICE   main:           33    58005994       34480  1.5660475E+08
+  NOTICE   main:           33    58005996       34480  1.5646834E+08
+  NOTICE   main:           33    58005998       34480  1.5632949E+08
+  NOTICE   main:           33    58006000       34480  1.5618965E+08
+  NOTICE   main:           33    58006002       34480  1.5605390E+08
+  NOTICE   main:           33    58006004       34480  1.5592085E+08
+  NOTICE   main:           33    58006006       34480  1.5578846E+08
+  NOTICE   main:           33    58006008       34480  1.5564478E+08
+  NOTICE   main:           33    58006010       34480  1.5549542E+08
+  NOTICE   main:           33    58006012       34480  1.5534499E+08
+  NOTICE   main:           33    58006014       34480  1.5520026E+08
+  NOTICE   main:           33    58006016       34480  1.5505702E+08
+  NOTICE   main:           33    58006018       34480  1.5491555E+08
+  NOTICE   main:           33    58006020       34480  1.5477050E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           34    58006022       34480  1.5463208E+08
+  NOTICE   main:           34    58006024       34480  1.5449459E+08
+  NOTICE   main:           34    58006026       34480  1.5436013E+08
+  NOTICE   main:           34    58006028       34480  1.5422411E+08
+  NOTICE   main:           34    58006030       34480  1.5409181E+08
+  NOTICE   main:           34    58006032       34480  1.5396514E+08
+  NOTICE   main:           34    58006034       34480  1.5383477E+08
+  NOTICE   main:           34    58006036       34480  1.5370270E+08
+  NOTICE   main:           34    58006038       34480  1.5357435E+08
+  NOTICE   main:           34    58006040       34480  1.5344254E+08
+  NOTICE   main:           34    58006042       34480  1.5331310E+08
+  NOTICE   main:           34    58006044       34480  1.5318016E+08
+  NOTICE   main:           34    58006046       34480  1.5304370E+08
+  NOTICE   main:           34    58006048       34480  1.5290990E+08
+  NOTICE   main:           34    58006050       34480  1.5278019E+08
+  NOTICE   main:           34    58006052       34480  1.5265426E+08
+  NOTICE   main:           34    58006054       34480  1.5252571E+08
+  NOTICE   main:           34    58006056       34480  1.5240664E+08
+  NOTICE   main:           34    58006058       34480  1.5227653E+08
+  NOTICE   main:           34    58006060       34480  1.5214533E+08
+  NOTICE   main:           34    58006062       34480  1.5201064E+08
+  NOTICE   main:           34    58006064       34480  1.5188234E+08
+  NOTICE   main:           34    58006066       34480  1.5175883E+08
+  NOTICE   main:           34    58006068       34480  1.5162838E+08
+  NOTICE   main:           34    58006070       34480  1.5149526E+08
+  NOTICE   main:           34    58006072       34480  1.5136006E+08
+  NOTICE   main:           34    58006074       34480  1.5121915E+08
+  NOTICE   main:           34    58006076       34480  1.5107507E+08
+  NOTICE   main:           34    58006078       34480  1.5094003E+08
+  NOTICE   main:           34    58006080       34480  1.5080174E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58006260    58005900
+  NOTICE metinp: GDAS 1 1477  360  181    1    1 58006260 10  4 16  3
+  NOTICE   main:           35    58006082       34480  1.5065675E+08
+  NOTICE   main:           35    58006084       34480  1.5052322E+08
+  NOTICE   main:           35    58006086       34480  1.5039182E+08
+  NOTICE   main:           35    58006088       34480  1.5025890E+08
+  NOTICE   main:           35    58006090       34480  1.5012520E+08
+  NOTICE   main:           35    58006092       34480  1.4998654E+08
+  NOTICE   main:           35    58006094       34480  1.4985197E+08
+  NOTICE   main:           35    58006096       34480  1.4972296E+08
+  NOTICE   main:           35    58006098       34480  1.4959677E+08
+  NOTICE   main:           35    58006100       34480  1.4947126E+08
+  NOTICE   main:           35    58006102       34480  1.4934768E+08
+  NOTICE   main:           35    58006104       34480  1.4921942E+08
+  NOTICE   main:           35    58006106       34480  1.4908706E+08
+  NOTICE   main:           35    58006108       34480  1.4895491E+08
+  NOTICE   main:           35    58006110       34480  1.4882698E+08
+  NOTICE   main:           35    58006112       34480  1.4869878E+08
+  NOTICE   main:           35    58006114       34480  1.4857323E+08
+  NOTICE   main:           35    58006116       34480  1.4844984E+08
+  NOTICE   main:           35    58006118       34480  1.4832886E+08
+  NOTICE   main:           35    58006120       34480  1.4820694E+08
+  NOTICE   main:           35    58006122       34480  1.4808552E+08
+  NOTICE   main:           35    58006124       34480  1.4795549E+08
+  NOTICE   main:           35    58006126       34480  1.4781990E+08
+  NOTICE   main:           35    58006128       34480  1.4768862E+08
+  NOTICE   main:           35    58006130       34480  1.4756194E+08
+  NOTICE   main:           35    58006132       34480  1.4743243E+08
+  NOTICE   main:           35    58006134       34480  1.4730619E+08
+  NOTICE   main:           35    58006136       34480  1.4718603E+08
+  NOTICE   main:           35    58006138       34480  1.4706171E+08
+  NOTICE   main:           35    58006140       34480  1.4694014E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           36    58006142       34480  1.4681603E+08
+  NOTICE   main:           36    58006144       34480  1.4669251E+08
+  NOTICE   main:           36    58006146       34480  1.4656405E+08
+  NOTICE   main:           36    58006148       34480  1.4643790E+08
+  NOTICE   main:           36    58006150       34480  1.4631675E+08
+  NOTICE   main:           36    58006152       34480  1.4618770E+08
+  NOTICE   main:           36    58006154       34480  1.4605509E+08
+  NOTICE   main:           36    58006156       34480  1.4592533E+08
+  NOTICE   main:           36    58006158       34480  1.4580184E+08
+  NOTICE   main:           36    58006160       34480  1.4568190E+08
+  NOTICE   main:           36    58006162       34480  1.4556646E+08
+  NOTICE   main:           36    58006164       34480  1.4544811E+08
+  NOTICE   main:           36    58006166       34480  1.4533365E+08
+  NOTICE   main:           36    58006168       34480  1.4521178E+08
+  NOTICE   main:           36    58006170       34480  1.4508363E+08
+  NOTICE   main:           36    58006172       34480  1.4495552E+08
+  NOTICE   main:           36    58006174       34480  1.4483342E+08
+  NOTICE   main:           36    58006176       34480  1.4471229E+08
+  NOTICE   main:           36    58006178       34480  1.4459829E+08
+  NOTICE   main:           36    58006180       34480  1.4448638E+08
+  NOTICE   main:           36    58006182       34480  1.4436774E+08
+  NOTICE   main:           36    58006184       34480  1.4425093E+08
+  NOTICE   main:           36    58006186       34480  1.4413435E+08
+  NOTICE   main:           36    58006188       34480  1.4402179E+08
+  NOTICE   main:           36    58006190       34480  1.4391502E+08
+  NOTICE   main:           36    58006192       34480  1.4380723E+08
+  NOTICE   main:           36    58006194       34480  1.4369256E+08
+  NOTICE   main:           36    58006196       34480  1.4357763E+08
+  NOTICE   main:           36    58006198       34480  1.4347101E+08
+  NOTICE condsk:  1 output at    4  16   2   0
+  NOTICE   main:           36    58006200       34480  1.4336363E+08
+  NOTICE parout:   10   4  16   2   0    Num=   34480
+                                                        Index  Height %Mass
+                                                           20 11505.0  0.05
+                                                           19 10360.0  0.74
+                                                           18  9275.0  3.25
+                                                           17  8250.0  4.05
+                                                           16  7285.0  3.04
+                                                           15  6380.0  4.30
+                                                           14  5535.0  5.10
+                                                           13  4750.0  5.53
+                                                           12  4025.0  5.81
+                                                           11  3360.0  8.49
+                                                           10  2755.0  9.60
+                                                            9  2210.0  8.32
+                                                            8  1725.0  6.43
+                                                            7  1300.0  6.11
+                                                            6   935.0  6.90
+                                                            5   630.0  7.71
+                                                            4   385.0  6.19
+                                                            3   200.0  4.83
+                                                            2    75.0  2.52
+                                                            1    10.0  1.02
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           37    58006202       34480  1.4325526E+08
+  NOTICE   main:           37    58006204       34480  1.4314606E+08
+  NOTICE   main:           37    58006206       34480  1.4303618E+08
+  NOTICE   main:           37    58006208       34480  1.4292816E+08
+  NOTICE   main:           37    58006210       34480  1.4281994E+08
+  NOTICE   main:           37    58006212       34480  1.4271445E+08
+  NOTICE   main:           37    58006214       34480  1.4260915E+08
+  NOTICE   main:           37    58006216       34480  1.4251349E+08
+  NOTICE   main:           37    58006218       34480  1.4241814E+08
+  NOTICE   main:           37    58006220       34480  1.4232392E+08
+  NOTICE   main:           37    58006222       34480  1.4222472E+08
+  NOTICE   main:           37    58006224       34480  1.4212216E+08
+  NOTICE   main:           37    58006226       34480  1.4202085E+08
+  NOTICE   main:           37    58006228       34480  1.4192144E+08
+  NOTICE   main:           37    58006230       34480  1.4181726E+08
+  NOTICE   main:           37    58006232       34480  1.4170976E+08
+  NOTICE   main:           37    58006234       34480  1.4160114E+08
+  NOTICE   main:           37    58006236       34480  1.4149498E+08
+  NOTICE   main:           37    58006238       34480  1.4138910E+08
+  NOTICE   main:           37    58006240       34480  1.4128347E+08
+  NOTICE   main:           37    58006242       34480  1.4117811E+08
+  NOTICE   main:           37    58006244       34480  1.4108099E+08
+  NOTICE   main:           37    58006246       34480  1.4097990E+08
+  NOTICE   main:           37    58006248       34480  1.4087691E+08
+  NOTICE   main:           37    58006250       34480  1.4076832E+08
+  NOTICE   main:           37    58006252       34480  1.4066064E+08
+  NOTICE   main:           37    58006254       34480  1.4055358E+08
+  NOTICE   main:           37    58006256       34480  1.4045371E+08
+  NOTICE   main:           37    58006258       34480  1.4035230E+08
+  NOTICE   main:           37    58006260       34480  1.4025118E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58006440    58006080
+  NOTICE metinp: GDAS 1 1641  360  181    1    1 58006440 10  4 16  6
+  NOTICE   main:           38    58006262       34480  1.4015470E+08
+  NOTICE   main:           38    58006264       34480  1.4005522E+08
+  NOTICE   main:           38    58006266       34480  1.3995325E+08
+  NOTICE   main:           38    58006268       34480  1.3985310E+08
+  NOTICE   main:           38    58006270       34480  1.3975886E+08
+  NOTICE   main:           38    58006272       34480  1.3967072E+08
+  NOTICE   main:           38    58006274       34480  1.3958760E+08
+  NOTICE   main:           38    58006276       34480  1.3950219E+08
+  NOTICE   main:           38    58006278       34480  1.3941400E+08
+  NOTICE   main:           38    58006280       34480  1.3931925E+08
+  NOTICE   main:           38    58006282       34480  1.3922510E+08
+  NOTICE   main:           38    58006284       34480  1.3912907E+08
+  NOTICE   main:           38    58006286       34480  1.3902997E+08
+  NOTICE   main:           38    58006288       34480  1.3893365E+08
+  NOTICE   main:           38    58006290       34480  1.3883869E+08
+  NOTICE   main:           38    58006292       34480  1.3875072E+08
+  NOTICE   main:           38    58006294       34480  1.3866267E+08
+  NOTICE   main:           38    58006296       34480  1.3857266E+08
+  NOTICE   main:           38    58006298       34480  1.3848147E+08
+  NOTICE   main:           38    58006300       34480  1.3838922E+08
+  NOTICE   main:           38    58006302       34480  1.3829746E+08
+  NOTICE   main:           38    58006304       34480  1.3820315E+08
+  NOTICE   main:           38    58006306       34480  1.3811099E+08
+  NOTICE   main:           38    58006308       34480  1.3802094E+08
+  NOTICE   main:           38    58006310       34480  1.3793582E+08
+  NOTICE   main:           38    58006312       34480  1.3785382E+08
+  NOTICE   main:           38    58006314       34480  1.3777038E+08
+  NOTICE   main:           38    58006316       34480  1.3768698E+08
+  NOTICE   main:           38    58006318       34480  1.3760715E+08
+  NOTICE   main:           38    58006320       34480  1.3751917E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           39    58006322       34480  1.3742971E+08
+  NOTICE   main:           39    58006324       34480  1.3734622E+08
+  NOTICE   main:           39    58006326       34480  1.3726123E+08
+  NOTICE   main:           39    58006328       34480  1.3717784E+08
+  NOTICE   main:           39    58006330       34480  1.3708885E+08
+  NOTICE   main:           39    58006332       34480  1.3699230E+08
+  NOTICE   main:           39    58006334       34480  1.3689294E+08
+  NOTICE   main:           39    58006336       34480  1.3679168E+08
+  NOTICE   main:           39    58006338       34480  1.3669278E+08
+  NOTICE   main:           39    58006340       34480  1.3659802E+08
+  NOTICE   main:           39    58006342       34480  1.3650179E+08
+  NOTICE   main:           39    58006344       34480  1.3640709E+08
+  NOTICE   main:           39    58006346       34480  1.3631245E+08
+  NOTICE   main:           39    58006348       34480  1.3621926E+08
+  NOTICE   main:           39    58006350       34480  1.3612304E+08
+  NOTICE   main:           39    58006352       34480  1.3603189E+08
+  NOTICE   main:           39    58006354       34480  1.3594448E+08
+  NOTICE   main:           39    58006356       34480  1.3585192E+08
+  NOTICE   main:           39    58006358       34480  1.3576160E+08
+  NOTICE   main:           39    58006360       34480  1.3566866E+08
+  NOTICE   main:           39    58006362       34480  1.3557726E+08
+  NOTICE   main:           39    58006364       34480  1.3549384E+08
+  NOTICE   main:           39    58006366       34480  1.3540750E+08
+  NOTICE   main:           39    58006368       34480  1.3532029E+08
+  NOTICE   main:           39    58006370       34480  1.3523306E+08
+  NOTICE   main:           39    58006372       34480  1.3515008E+08
+  NOTICE   main:           39    58006374       34480  1.3506522E+08
+  NOTICE   main:           39    58006376       34480  1.3498019E+08
+  NOTICE   main:           39    58006378       34480  1.3490077E+08
+  NOTICE   main:           39    58006380       34480  1.3482413E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           40    58006382       34480  1.3474304E+08
+  NOTICE   main:           40    58006384       34480  1.3466413E+08
+  NOTICE   main:           40    58006386       34480  1.3458597E+08
+  NOTICE   main:           40    58006388       34480  1.3451104E+08
+  NOTICE   main:           40    58006390       34480  1.3443323E+08
+  NOTICE   main:           40    58006392       34480  1.3435938E+08
+  NOTICE   main:           40    58006394       34480  1.3428373E+08
+  NOTICE   main:           40    58006396       34480  1.3421037E+08
+  NOTICE   main:           40    58006398       34480  1.3413618E+08
+  NOTICE   main:           40    58006400       34480  1.3405883E+08
+  NOTICE   main:           40    58006402       34480  1.3397576E+08
+  NOTICE   main:           40    58006404       34480  1.3389478E+08
+  NOTICE   main:           40    58006406       34480  1.3381395E+08
+  NOTICE   main:           40    58006408       34480  1.3373448E+08
+  NOTICE   main:           40    58006410       34480  1.3364974E+08
+  NOTICE   main:           40    58006412       34480  1.3356323E+08
+  NOTICE   main:           40    58006414       34480  1.3348730E+08
+  NOTICE   main:           40    58006416       34480  1.3341118E+08
+  NOTICE   main:           40    58006418       34480  1.3333680E+08
+  NOTICE   main:           40    58006420       34480  1.3325120E+08
+  NOTICE   main:           40    58006422       34480  1.3316475E+08
+  NOTICE   main:           40    58006424       34480  1.3308691E+08
+  NOTICE   main:           40    58006426       34480  1.3301498E+08
+  NOTICE   main:           40    58006428       34480  1.3293933E+08
+  NOTICE   main:           40    58006430       34480  1.3287059E+08
+  NOTICE   main:           40    58006432       34480  1.3280181E+08
+  NOTICE   main:           40    58006434       34480  1.3273550E+08
+  NOTICE   main:           40    58006436       34480  1.3266683E+08
+  NOTICE   main:           40    58006438       34480  1.3258792E+08
+  NOTICE   main:           40    58006440       34480  1.3251059E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58006620    58006260
+  NOTICE metinp: GDAS 1 1805  360  181    1    1 58006620 10  4 16  9
+  NOTICE   main:           41    58006442       34480  1.3242822E+08
+  NOTICE   main:           41    58006444       34480  1.3234970E+08
+  NOTICE   main:           41    58006446       34480  1.3226866E+08
+  NOTICE   main:           41    58006448       34480  1.3218336E+08
+  NOTICE   main:           41    58006450       34480  1.3209824E+08
+  NOTICE   main:           41    58006452       34480  1.3201333E+08
+  NOTICE   main:           41    58006454       34480  1.3192253E+08
+  NOTICE   main:           41    58006456       34480  1.3182371E+08
+  NOTICE   main:           41    58006458       34480  1.3173040E+08
+  NOTICE   main:           41    58006460       34480  1.3164304E+08
+  NOTICE   main:           41    58006462       34480  1.3155742E+08
+  NOTICE   main:           41    58006464       34480  1.3146632E+08
+  NOTICE   main:           41    58006466       34480  1.3137782E+08
+  NOTICE   main:           41    58006468       34480  1.3129304E+08
+  NOTICE   main:           41    58006470       34480  1.3120726E+08
+  NOTICE   main:           41    58006472       34480  1.3111766E+08
+  NOTICE   main:           41    58006474       34480  1.3102576E+08
+  NOTICE   main:           41    58006476       34480  1.3093771E+08
+  NOTICE   main:           41    58006478       34480  1.3085027E+08
+  NOTICE   main:           41    58006480       34480  1.3076803E+08
+  NOTICE   main:           41    58006482       34480  1.3068011E+08
+  NOTICE   main:           41    58006484       34480  1.3059021E+08
+  NOTICE   main:           41    58006486       34480  1.3049934E+08
+  NOTICE   main:           41    58006488       34480  1.3041186E+08
+  NOTICE   main:           41    58006490       34480  1.3032952E+08
+  NOTICE   main:           41    58006492       34480  1.3024568E+08
+  NOTICE   main:           41    58006494       34480  1.3016277E+08
+  NOTICE   main:           41    58006496       34480  1.3007789E+08
+  NOTICE   main:           41    58006498       34480  1.2999677E+08
+  NOTICE   main:           41    58006500       34480  1.2991458E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           42    58006502       34480  1.2983333E+08
+  NOTICE   main:           42    58006504       34480  1.2975138E+08
+  NOTICE   main:           42    58006506       34480  1.2967501E+08
+  NOTICE   main:           42    58006508       34480  1.2959637E+08
+  NOTICE   main:           42    58006510       34480  1.2951261E+08
+  NOTICE   main:           42    58006512       34480  1.2942579E+08
+  NOTICE   main:           42    58006514       34480  1.2933933E+08
+  NOTICE   main:           42    58006516       34480  1.2925635E+08
+  NOTICE   main:           42    58006518       34480  1.2917307E+08
+  NOTICE   main:           42    58006520       34480  1.2908880E+08
+  NOTICE   main:           42    58006522       34480  1.2900656E+08
+  NOTICE   main:           42    58006524       34480  1.2892354E+08
+  NOTICE   main:           42    58006526       34480  1.2883450E+08
+  NOTICE   main:           42    58006528       34480  1.2875166E+08
+  NOTICE   main:           42    58006530       34480  1.2867138E+08
+  NOTICE   main:           42    58006532       34480  1.2859382E+08
+  NOTICE   main:           42    58006534       34480  1.2852451E+08
+  NOTICE   main:           42    58006536       34480  1.2845034E+08
+  NOTICE   main:           42    58006538       34480  1.2837152E+08
+  NOTICE   main:           42    58006540       34480  1.2829875E+08
+  NOTICE   main:           42    58006542       34480  1.2822493E+08
+  NOTICE   main:           42    58006544       34480  1.2815104E+08
+  NOTICE   main:           42    58006546       34480  1.2807411E+08
+  NOTICE   main:           42    58006548       34480  1.2799114E+08
+  NOTICE   main:           42    58006550       34480  1.2791163E+08
+  NOTICE   main:           42    58006552       34480  1.2783942E+08
+  NOTICE   main:           42    58006554       34480  1.2776435E+08
+  NOTICE   main:           42    58006556       34480  1.2768403E+08
+  NOTICE   main:           42    58006558       34480  1.2760787E+08
+  NOTICE condsk:  1 output at    4  16   8   0
+  NOTICE   main:           42    58006560       34480  1.2753403E+08
+  NOTICE parout:   10   4  16   8   0    Num=   34480
+                                                        Index  Height %Mass
+                                                           20 11505.0  0.06
+                                                           19 10360.0  0.69
+                                                           18  9275.0  2.86
+                                                           17  8250.0  4.44
+                                                           16  7285.0  3.02
+                                                           15  6380.0  3.59
+                                                           14  5535.0  5.74
+                                                           13  4750.0  7.25
+                                                           12  4025.0  6.94
+                                                           11  3360.0  7.83
+                                                           10  2755.0  8.67
+                                                            9  2210.0  7.59
+                                                            8  1725.0  6.46
+                                                            7  1300.0  8.14
+                                                            6   935.0  7.24
+                                                            5   630.0  6.44
+                                                            4   385.0  5.56
+                                                            3   200.0  4.28
+                                                            2    75.0  2.29
+                                                            1    10.0  0.92
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           43    58006563       34480  1.2743848E+08
+  NOTICE   main:           43    58006566       34480  1.2734282E+08
+  NOTICE   main:           43    58006569       34480  1.2723144E+08
+  NOTICE   main:           43    58006572       34480  1.2711987E+08
+  NOTICE   main:           43    58006575       34480  1.2701109E+08
+  NOTICE   main:           43    58006578       34480  1.2690992E+08
+  NOTICE   main:           43    58006581       34480  1.2680842E+08
+  NOTICE   main:           43    58006584       34480  1.2671093E+08
+  NOTICE   main:           43    58006587       34480  1.2660757E+08
+  NOTICE   main:           43    58006590       34480  1.2651456E+08
+  NOTICE   main:           43    58006593       34480  1.2642227E+08
+  NOTICE   main:           43    58006596       34480  1.2632746E+08
+  NOTICE   main:           43    58006599       34480  1.2623526E+08
+  NOTICE   main:           43    58006602       34480  1.2613645E+08
+  NOTICE   main:           43    58006605       34480  1.2603904E+08
+  NOTICE   main:           43    58006608       34480  1.2594626E+08
+  NOTICE   main:           43    58006611       34480  1.2585477E+08
+  NOTICE   main:           43    58006614       34480  1.2575597E+08
+  NOTICE   main:           43    58006617       34480  1.2566618E+08
+  NOTICE   main:           43    58006620       34480  1.2556547E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58006800    58006440
+  NOTICE metinp: GDAS 1 1969  360  181    1    1 58006800 10  4 16 12
+  NOTICE   main:           44    58006623       34480  1.2547262E+08
+  NOTICE   main:           44    58006626       34480  1.2537838E+08
+  NOTICE   main:           44    58006629       34480  1.2528589E+08
+  NOTICE   main:           44    58006632       34480  1.2519242E+08
+  NOTICE   main:           44    58006635       34480  1.2509723E+08
+  NOTICE   main:           44    58006638       34480  1.2500598E+08
+  NOTICE   main:           44    58006641       34480  1.2489662E+08
+  NOTICE   main:           44    58006644       34480  1.2480779E+08
+  NOTICE   main:           44    58006647       34480  1.2471309E+08
+  NOTICE   main:           44    58006650       34480  1.2461942E+08
+  NOTICE   main:           44    58006653       34480  1.2452760E+08
+  NOTICE   main:           44    58006656       34480  1.2442262E+08
+  NOTICE   main:           44    58006659       34480  1.2431488E+08
+  NOTICE   main:           44    58006662       34480  1.2421195E+08
+  NOTICE   main:           44    58006665       34480  1.2411885E+08
+  NOTICE   main:           44    58006668       34480  1.2403006E+08
+  NOTICE   main:           44    58006671       34480  1.2393965E+08
+  NOTICE   main:           44    58006674       34480  1.2384298E+08
+  NOTICE   main:           44    58006677       34480  1.2375544E+08
+  NOTICE   main:           44    58006680       34480  1.2367125E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           45    58006683       34480  1.2358250E+08
+  NOTICE   main:           45    58006686       34480  1.2348280E+08
+  NOTICE   main:           45    58006689       34480  1.2337509E+08
+  NOTICE   main:           45    58006692       34480  1.2327504E+08
+  NOTICE   main:           45    58006695       34480  1.2317331E+08
+  NOTICE   main:           45    58006698       34480  1.2307122E+08
+  NOTICE   main:           45    58006701       34480  1.2296685E+08
+  NOTICE   main:           45    58006704       34480  1.2287947E+08
+  NOTICE   main:           45    58006707       34480  1.2279293E+08
+  NOTICE   main:           45    58006710       34480  1.2269139E+08
+  NOTICE   main:           45    58006713       34480  1.2260171E+08
+  NOTICE   main:           45    58006716       34480  1.2250408E+08
+  NOTICE   main:           45    58006719       34480  1.2240267E+08
+  NOTICE   main:           45    58006722       34480  1.2230483E+08
+  NOTICE   main:           45    58006725       34480  1.2221018E+08
+  NOTICE   main:           45    58006728       34480  1.2211426E+08
+  NOTICE   main:           45    58006731       34480  1.2202861E+08
+  NOTICE   main:           45    58006734       34480  1.2194114E+08
+  NOTICE   main:           45    58006737       34480  1.2185038E+08
+  NOTICE   main:           45    58006740       34480  1.2175579E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           46    58006743       34480  1.2165622E+08
+  NOTICE   main:           46    58006746       34480  1.2156330E+08
+  NOTICE   main:           46    58006749       34480  1.2147334E+08
+  NOTICE   main:           46    58006752       34480  1.2138397E+08
+  NOTICE   main:           46    58006755       34480  1.2128962E+08
+  NOTICE   main:           46    58006758       34480  1.2118882E+08
+  NOTICE   main:           46    58006761       34480  1.2109216E+08
+  NOTICE   main:           46    58006764       34480  1.2100234E+08
+  NOTICE   main:           46    58006767       34480  1.2091531E+08
+  NOTICE   main:           46    58006770       34480  1.2082326E+08
+  NOTICE   main:           46    58006773       34480  1.2073232E+08
+  NOTICE   main:           46    58006776       34480  1.2064595E+08
+  NOTICE   main:           46    58006779       34480  1.2056040E+08
+  NOTICE   main:           46    58006782       34480  1.2047363E+08
+  NOTICE   main:           46    58006785       34480  1.2039680E+08
+  NOTICE   main:           46    58006788       34480  1.2032160E+08
+  NOTICE   main:           46    58006791       34480  1.2022312E+08
+  NOTICE   main:           46    58006794       34480  1.2012635E+08
+  NOTICE   main:           46    58006797       34480  1.2003670E+08
+  NOTICE   main:           46    58006800       34480  1.1995136E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58006980    58006620
+  NOTICE metinp: GDAS 1 2133  360  181    1    1 58006980 10  4 16 15
+  NOTICE   main:           47    58006803       34480  1.1986658E+08
+  NOTICE   main:           47    58006806       34480  1.1978734E+08
+  NOTICE   main:           47    58006809       34480  1.1970571E+08
+  NOTICE   main:           47    58006812       34480  1.1961421E+08
+  NOTICE   main:           47    58006815       34480  1.1953366E+08
+  NOTICE   main:           47    58006818       34480  1.1945381E+08
+  NOTICE   main:           47    58006821       34480  1.1936661E+08
+  NOTICE   main:           47    58006824       34480  1.1927232E+08
+  NOTICE   main:           47    58006827       34480  1.1918219E+08
+  NOTICE   main:           47    58006830       34480  1.1909205E+08
+  NOTICE   main:           47    58006833       34480  1.1900730E+08
+  NOTICE   main:           47    58006836       34480  1.1893010E+08
+  NOTICE   main:           47    58006839       34480  1.1884614E+08
+  NOTICE   main:           47    58006842       34480  1.1877082E+08
+  NOTICE   main:           47    58006845       34480  1.1869454E+08
+  NOTICE   main:           47    58006848       34480  1.1860994E+08
+  NOTICE   main:           47    58006851       34480  1.1852454E+08
+  NOTICE   main:           47    58006854       34480  1.1844120E+08
+  NOTICE   main:           47    58006857       34480  1.1835661E+08
+  NOTICE   main:           47    58006860       34480  1.1827245E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           48    58006863       34480  1.1817957E+08
+  NOTICE   main:           48    58006866       34480  1.1809202E+08
+  NOTICE   main:           48    58006869       34480  1.1800018E+08
+  NOTICE   main:           48    58006872       34480  1.1790534E+08
+  NOTICE   main:           48    58006875       34480  1.1782154E+08
+  NOTICE   main:           48    58006878       34480  1.1772978E+08
+  NOTICE   main:           48    58006881       34480  1.1764246E+08
+  NOTICE   main:           48    58006884       34480  1.1756594E+08
+  NOTICE   main:           48    58006887       34480  1.1748760E+08
+  NOTICE   main:           48    58006890       34480  1.1740706E+08
+  NOTICE   main:           48    58006893       34480  1.1732309E+08
+  NOTICE   main:           48    58006896       34480  1.1723466E+08
+  NOTICE   main:           48    58006899       34480  1.1714570E+08
+  NOTICE   main:           48    58006902       34480  1.1705720E+08
+  NOTICE   main:           48    58006905       34480  1.1697520E+08
+  NOTICE   main:           48    58006908       34480  1.1688622E+08
+  NOTICE   main:           48    58006911       34480  1.1679592E+08
+  NOTICE   main:           48    58006914       34480  1.1669866E+08
+  NOTICE   main:           48    58006917       34480  1.1661270E+08
+  NOTICE condsk:  1 output at    4  16  14   0
+  NOTICE   main:           48    58006920       34480  1.1651579E+08
+  NOTICE parout:   10   4  16  14   0    Num=   34480
+                                                        Index  Height %Mass
+                                                           20 11505.0  0.06
+                                                           19 10360.0  0.62
+                                                           18  9275.0  2.27
+                                                           17  8250.0  4.21
+                                                           16  7285.0  3.54
+                                                           15  6380.0  3.67
+                                                           14  5535.0  4.96
+                                                           13  4750.0  8.20
+                                                           12  4025.0  8.05
+                                                           11  3360.0  8.18
+                                                           10  2755.0  9.48
+                                                            9  2210.0  8.07
+                                                            8  1725.0  7.19
+                                                            7  1300.0  6.97
+                                                            6   935.0  6.83
+                                                            5   630.0  6.04
+                                                            4   385.0  4.96
+                                                            3   200.0  3.69
+                                                            2    75.0  2.13
+                                                            1    10.0  0.86
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           49    58006923       34480  1.1642299E+08
+  NOTICE   main:           49    58006926       34480  1.1633195E+08
+  NOTICE   main:           49    58006929       34480  1.1624896E+08
+  NOTICE   main:           49    58006932       34480  1.1616835E+08
+  NOTICE   main:           49    58006935       34480  1.1608272E+08
+  NOTICE   main:           49    58006938       34480  1.1600614E+08
+  NOTICE   main:           49    58006941       34480  1.1593805E+08
+  NOTICE   main:           49    58006944       34480  1.1586891E+08
+  NOTICE   main:           49    58006947       34480  1.1579522E+08
+  NOTICE   main:           49    58006950       34480  1.1572550E+08
+  NOTICE   main:           49    58006953       34480  1.1564970E+08
+  NOTICE   main:           49    58006956       34480  1.1556726E+08
+  NOTICE   main:           49    58006959       34480  1.1549298E+08
+  NOTICE   main:           49    58006962       34480  1.1542050E+08
+  NOTICE   main:           49    58006965       34480  1.1533990E+08
+  NOTICE   main:           49    58006968       34480  1.1526600E+08
+  NOTICE   main:           49    58006971       34480  1.1519475E+08
+  NOTICE   main:           49    58006974       34480  1.1511243E+08
+  NOTICE   main:           49    58006977       34480  1.1502939E+08
+  NOTICE   main:           49    58006980       34480  1.1495125E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58007160    58006800
+  NOTICE metinp: GDAS 1 2297  360  181    1    1 58007160 10  4 16 18
+  NOTICE   main:           50    58006983       34480  1.1487974E+08
+  NOTICE   main:           50    58006986       34480  1.1480638E+08
+  NOTICE   main:           50    58006989       34480  1.1473864E+08
+  NOTICE   main:           50    58006992       34480  1.1466984E+08
+  NOTICE   main:           50    58006995       34480  1.1459694E+08
+  NOTICE   main:           50    58006998       34480  1.1451930E+08
+  NOTICE   main:           50    58007001       34480  1.1445011E+08
+  NOTICE   main:           50    58007004       34480  1.1438174E+08
+  NOTICE   main:           50    58007007       34480  1.1430757E+08
+  NOTICE   main:           50    58007010       34480  1.1423653E+08
+  NOTICE   main:           50    58007013       34480  1.1416469E+08
+  NOTICE   main:           50    58007016       34480  1.1409026E+08
+  NOTICE   main:           50    58007019       34480  1.1400922E+08
+  NOTICE   main:           50    58007022       34480  1.1393248E+08
+  NOTICE   main:           50    58007025       34480  1.1385486E+08
+  NOTICE   main:           50    58007028       34480  1.1377381E+08
+  NOTICE   main:           50    58007031       34480  1.1370712E+08
+  NOTICE   main:           50    58007034       34480  1.1363296E+08
+  NOTICE   main:           50    58007037       34480  1.1355923E+08
+  NOTICE   main:           50    58007040       34480  1.1347888E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           51    58007042       34480  1.1342475E+08
+  NOTICE   main:           51    58007044       34480  1.1337402E+08
+  NOTICE   main:           51    58007046       34480  1.1332042E+08
+  NOTICE   main:           51    58007048       34480  1.1326883E+08
+  NOTICE   main:           51    58007050       34480  1.1321422E+08
+  NOTICE   main:           51    58007052       34480  1.1316210E+08
+  NOTICE   main:           51    58007054       34480  1.1310909E+08
+  NOTICE   main:           51    58007056       34480  1.1305632E+08
+  NOTICE   main:           51    58007058       34480  1.1300381E+08
+  NOTICE   main:           51    58007060       34480  1.1294942E+08
+  NOTICE   main:           51    58007062       34480  1.1289598E+08
+  NOTICE   main:           51    58007064       34480  1.1284274E+08
+  NOTICE   main:           51    58007066       34480  1.1278853E+08
+  NOTICE   main:           51    58007068       34480  1.1273539E+08
+  NOTICE   main:           51    58007070       34480  1.1268210E+08
+  NOTICE   main:           51    58007072       34480  1.1262960E+08
+  NOTICE   main:           51    58007074       34480  1.1257629E+08
+  NOTICE   main:           51    58007076       34480  1.1252373E+08
+  NOTICE   main:           51    58007078       34480  1.1246958E+08
+  NOTICE   main:           51    58007080       34480  1.1241632E+08
+  NOTICE   main:           51    58007082       34480  1.1236446E+08
+  NOTICE   main:           51    58007084       34480  1.1231430E+08
+  NOTICE   main:           51    58007086       34480  1.1226530E+08
+  NOTICE   main:           51    58007088       34480  1.1222019E+08
+  NOTICE   main:           51    58007090       34480  1.1217522E+08
+  NOTICE   main:           51    58007092       34480  1.1212874E+08
+  NOTICE   main:           51    58007094       34480  1.1208048E+08
+  NOTICE   main:           51    58007096       34480  1.1202664E+08
+  NOTICE   main:           51    58007098       34480  1.1196981E+08
+  NOTICE   main:           51    58007100       34480  1.1191322E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           52    58007102       34480  1.1186534E+08
+  NOTICE   main:           52    58007104       34480  1.1182139E+08
+  NOTICE   main:           52    58007106       34480  1.1178032E+08
+  NOTICE   main:           52    58007108       34480  1.1173555E+08
+  NOTICE   main:           52    58007110       34480  1.1169374E+08
+  NOTICE   main:           52    58007112       34480  1.1165280E+08
+  NOTICE   main:           52    58007114       34480  1.1160563E+08
+  NOTICE   main:           52    58007116       34480  1.1155750E+08
+  NOTICE   main:           52    58007118       34480  1.1150984E+08
+  NOTICE   main:           52    58007120       34480  1.1146514E+08
+  NOTICE   main:           52    58007122       34480  1.1141920E+08
+  NOTICE   main:           52    58007124       34480  1.1136917E+08
+  NOTICE   main:           52    58007126       34480  1.1131835E+08
+  NOTICE   main:           52    58007128       34480  1.1126862E+08
+  NOTICE   main:           52    58007130       34480  1.1121581E+08
+  NOTICE   main:           52    58007132       34480  1.1116139E+08
+  NOTICE   main:           52    58007134       34480  1.1111234E+08
+  NOTICE   main:           52    58007136       34480  1.1105954E+08
+  NOTICE   main:           52    58007138       34480  1.1100795E+08
+  NOTICE   main:           52    58007140       34480  1.1095622E+08
+  NOTICE   main:           52    58007142       34480  1.1089853E+08
+  NOTICE   main:           52    58007144       34480  1.1084482E+08
+  NOTICE   main:           52    58007146       34480  1.1079456E+08
+  NOTICE   main:           52    58007148       34480  1.1074762E+08
+  NOTICE   main:           52    58007150       34480  1.1070165E+08
+  NOTICE   main:           52    58007152       34480  1.1065568E+08
+  NOTICE   main:           52    58007154       34480  1.1060864E+08
+  NOTICE   main:           52    58007156       34480  1.1056261E+08
+  NOTICE   main:           52    58007158       34480  1.1051765E+08
+  NOTICE   main:           52    58007160       34480  1.1047019E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58007340    58006980
+  NOTICE metinp: GDAS 1 2461  360  181    1    1 58007340 10  4 16 21
+  NOTICE   main:           53    58007162       34480  1.1042291E+08
+  NOTICE   main:           53    58007164       34480  1.1037531E+08
+  NOTICE   main:           53    58007166       34480  1.1032979E+08
+  NOTICE   main:           53    58007168       34480  1.1028562E+08
+  NOTICE   main:           53    58007170       34480  1.1023859E+08
+  NOTICE   main:           53    58007172       34480  1.1019357E+08
+  NOTICE   main:           53    58007174       34480  1.1014422E+08
+  NOTICE   main:           53    58007176       34480  1.1009035E+08
+  NOTICE   main:           53    58007178       34480  1.1003310E+08
+  NOTICE   main:           53    58007180       34480  1.0997806E+08
+  NOTICE   main:           53    58007182       34480  1.0992506E+08
+  NOTICE   main:           53    58007184       34480  1.0987250E+08
+  NOTICE   main:           53    58007186       34480  1.0981830E+08
+  NOTICE   main:           53    58007188       34480  1.0976557E+08
+  NOTICE   main:           53    58007190       34480  1.0971523E+08
+  NOTICE   main:           53    58007192       34480  1.0966245E+08
+  NOTICE   main:           53    58007194       34480  1.0960925E+08
+  NOTICE   main:           53    58007196       34480  1.0955248E+08
+  NOTICE   main:           53    58007198       34480  1.0950037E+08
+  NOTICE   main:           53    58007200       34480  1.0945114E+08
+  NOTICE   main:           53    58007202       34480  1.0940234E+08
+  NOTICE   main:           53    58007204       34480  1.0935472E+08
+  NOTICE   main:           53    58007206       34480  1.0930555E+08
+  NOTICE   main:           53    58007208       34480  1.0925035E+08
+  NOTICE   main:           53    58007210       34480  1.0919901E+08
+  NOTICE   main:           53    58007212       34480  1.0915117E+08
+  NOTICE   main:           53    58007214       34480  1.0910267E+08
+  NOTICE   main:           53    58007216       34480  1.0905314E+08
+  NOTICE   main:           53    58007218       34480  1.0900786E+08
+  NOTICE   main:           53    58007220       34480  1.0896101E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           54    58007222       34480  1.0891064E+08
+  NOTICE   main:           54    58007224       34480  1.0886192E+08
+  NOTICE   main:           54    58007226       34480  1.0881283E+08
+  NOTICE   main:           54    58007228       34480  1.0876429E+08
+  NOTICE   main:           54    58007230       34480  1.0871510E+08
+  NOTICE   main:           54    58007232       34480  1.0866946E+08
+  NOTICE   main:           54    58007234       34480  1.0862499E+08
+  NOTICE   main:           54    58007236       34480  1.0857746E+08
+  NOTICE   main:           54    58007238       34480  1.0853090E+08
+  NOTICE   main:           54    58007240       34480  1.0848246E+08
+  NOTICE   main:           54    58007242       34480  1.0843115E+08
+  NOTICE   main:           54    58007244       34480  1.0837973E+08
+  NOTICE   main:           54    58007246       34480  1.0832960E+08
+  NOTICE   main:           54    58007248       34480  1.0827730E+08
+  NOTICE   main:           54    58007250       34480  1.0822566E+08
+  NOTICE   main:           54    58007252       34480  1.0817469E+08
+  NOTICE   main:           54    58007254       34480  1.0812342E+08
+  NOTICE   main:           54    58007256       34480  1.0806848E+08
+  NOTICE   main:           54    58007258       34480  1.0801170E+08
+  NOTICE   main:           54    58007260       34480  1.0795832E+08
+  NOTICE   main:           54    58007262       34480  1.0790786E+08
+  NOTICE   main:           54    58007264       34480  1.0785907E+08
+  NOTICE   main:           54    58007266       34480  1.0780909E+08
+  NOTICE   main:           54    58007268       34480  1.0776064E+08
+  NOTICE   main:           54    58007270       34480  1.0771237E+08
+  NOTICE   main:           54    58007272       34480  1.0766392E+08
+  NOTICE   main:           54    58007274       34480  1.0761896E+08
+  NOTICE   main:           54    58007276       34480  1.0757235E+08
+  NOTICE   main:           54    58007278       34480  1.0752494E+08
+  NOTICE condsk:  1 output at    4  16  20   0
+  NOTICE   main:           54    58007280       34480  1.0747582E+08
+  NOTICE parout:   10   4  16  20   0    Num=   34480
+                                                        Index  Height %Mass
+                                                           20 11505.0  0.06
+                                                           19 10360.0  0.58
+                                                           18  9275.0  2.19
+                                                           17  8250.0  4.63
+                                                           16  7285.0  3.81
+                                                           15  6380.0  3.49
+                                                           14  5535.0  4.24
+                                                           13  4750.0  7.07
+                                                           12  4025.0  8.11
+                                                           11  3360.0  9.16
+                                                           10  2755.0  9.83
+                                                            9  2210.0 10.04
+                                                            8  1725.0  7.65
+                                                            7  1300.0  5.69
+                                                            6   935.0  6.14
+                                                            5   630.0  6.07
+                                                            4   385.0  5.02
+                                                            3   200.0  3.51
+                                                            2    75.0  2.01
+                                                            1    10.0  0.69
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           55    58007282       34480  1.0742331E+08
+  NOTICE   main:           55    58007284       34480  1.0736987E+08
+  NOTICE   main:           55    58007286       34480  1.0731738E+08
+  NOTICE   main:           55    58007288       34480  1.0726317E+08
+  NOTICE   main:           55    58007290       34480  1.0720915E+08
+  NOTICE   main:           55    58007292       34480  1.0715477E+08
+  NOTICE   main:           55    58007294       34480  1.0710227E+08
+  NOTICE   main:           55    58007296       34480  1.0705091E+08
+  NOTICE   main:           55    58007298       34480  1.0699776E+08
+  NOTICE   main:           55    58007300       34480  1.0695093E+08
+  NOTICE   main:           55    58007302       34480  1.0690157E+08
+  NOTICE   main:           55    58007304       34480  1.0684939E+08
+  NOTICE   main:           55    58007306       34480  1.0679734E+08
+  NOTICE   main:           55    58007308       34480  1.0674792E+08
+  NOTICE   main:           55    58007310       34480  1.0669726E+08
+  NOTICE   main:           55    58007312       34480  1.0664582E+08
+  NOTICE   main:           55    58007314       34480  1.0659310E+08
+  NOTICE   main:           55    58007316       34480  1.0654037E+08
+  NOTICE   main:           55    58007318       34480  1.0648443E+08
+  NOTICE   main:           55    58007320       34480  1.0643086E+08
+  NOTICE   main:           55    58007322       34480  1.0637690E+08
+  NOTICE   main:           55    58007324       34480  1.0632338E+08
+  NOTICE   main:           55    58007326       34480  1.0627101E+08
+  NOTICE   main:           55    58007328       34480  1.0621589E+08
+  NOTICE   main:           55    58007330       34480  1.0615624E+08
+  NOTICE   main:           55    58007332       34480  1.0609616E+08
+  NOTICE   main:           55    58007334       34480  1.0603915E+08
+  NOTICE   main:           55    58007336       34480  1.0598421E+08
+  NOTICE   main:           55    58007338       34480  1.0592792E+08
+  NOTICE   main:           55    58007340       34480  1.0587645E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58007520    58007160
+  NOTICE metinp: GDAS 1 2625  360  181    1    1 58007520 10  4 17  0
+  NOTICE   main:           56    58007342       34480  1.0582558E+08
+  NOTICE   main:           56    58007344       34480  1.0577158E+08
+  NOTICE   main:           56    58007346       34480  1.0571646E+08
+  NOTICE   main:           56    58007348       34480  1.0566442E+08
+  NOTICE   main:           56    58007350       34480  1.0561243E+08
+  NOTICE   main:           56    58007352       34480  1.0556210E+08
+  NOTICE   main:           56    58007354       34480  1.0551597E+08
+  NOTICE   main:           56    58007356       34480  1.0546411E+08
+  NOTICE   main:           56    58007358       34480  1.0541136E+08
+  NOTICE   main:           56    58007360       34480  1.0535829E+08
+  NOTICE   main:           56    58007362       34480  1.0530610E+08
+  NOTICE   main:           56    58007364       34480  1.0525776E+08
+  NOTICE   main:           56    58007366       34480  1.0520907E+08
+  NOTICE   main:           56    58007368       34480  1.0515918E+08
+  NOTICE   main:           56    58007370       34480  1.0510955E+08
+  NOTICE   main:           56    58007372       34480  1.0506130E+08
+  NOTICE   main:           56    58007374       34480  1.0501440E+08
+  NOTICE   main:           56    58007376       34480  1.0496845E+08
+  NOTICE   main:           56    58007378       34480  1.0492107E+08
+  NOTICE   main:           56    58007380       34480  1.0487211E+08
+  NOTICE   main:           56    58007382       34480  1.0482478E+08
+  NOTICE   main:           56    58007384       34480  1.0477643E+08
+  NOTICE   main:           56    58007386       34480  1.0472754E+08
+  NOTICE   main:           56    58007388       34480  1.0467382E+08
+  NOTICE   main:           56    58007390       34480  1.0462096E+08
+  NOTICE   main:           56    58007392       34480  1.0456653E+08
+  NOTICE   main:           56    58007394       34480  1.0451630E+08
+  NOTICE   main:           56    58007396       34480  1.0446464E+08
+  NOTICE   main:           56    58007398       34480  1.0441405E+08
+  NOTICE   main:           56    58007400       34480  1.0436056E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           57    58007402       34480  1.0430974E+08
+  NOTICE   main:           57    58007404       34480  1.0425920E+08
+  NOTICE   main:           57    58007406       34480  1.0421019E+08
+  NOTICE   main:           57    58007408       34480  1.0416142E+08
+  NOTICE   main:           57    58007410       34480  1.0411109E+08
+  NOTICE   main:           57    58007412       34480  1.0406224E+08
+  NOTICE   main:           57    58007414       34480  1.0401066E+08
+  NOTICE   main:           57    58007416       34480  1.0395701E+08
+  NOTICE   main:           57    58007418       34480  1.0390034E+08
+  NOTICE   main:           57    58007420       34480  1.0384451E+08
+  NOTICE   main:           57    58007422       34480  1.0379075E+08
+  NOTICE   main:           57    58007424       34480  1.0373667E+08
+  NOTICE   main:           57    58007426       34480  1.0368205E+08
+  NOTICE   main:           57    58007428       34480  1.0362778E+08
+  NOTICE   main:           57    58007430       34480  1.0357320E+08
+  NOTICE   main:           57    58007432       34480  1.0352021E+08
+  NOTICE   main:           57    58007434       34480  1.0346546E+08
+  NOTICE   main:           57    58007436       34480  1.0341210E+08
+  NOTICE   main:           57    58007438       34480  1.0336219E+08
+  NOTICE   main:           57    58007440       34480  1.0331094E+08
+  NOTICE   main:           57    58007442       34480  1.0326002E+08
+  NOTICE   main:           57    58007444       34480  1.0320984E+08
+  NOTICE   main:           57    58007446       34480  1.0316013E+08
+  NOTICE   main:           57    58007448       34480  1.0310662E+08
+  NOTICE   main:           57    58007450       34480  1.0305635E+08
+  NOTICE   main:           57    58007452       34480  1.0300795E+08
+  NOTICE   main:           57    58007454       34480  1.0295782E+08
+  NOTICE   main:           57    58007456       34480  1.0290150E+08
+  NOTICE   main:           57    58007458       34480  1.0284838E+08
+  NOTICE   main:           57    58007460       34480  1.0279789E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           58    58007462       34480  1.0274565E+08
+  NOTICE   main:           58    58007464       34480  1.0269158E+08
+  NOTICE   main:           58    58007466       34480  1.0263811E+08
+  NOTICE   main:           58    58007468       34480  1.0258603E+08
+  NOTICE   main:           58    58007470       34480  1.0253774E+08
+  NOTICE   main:           58    58007472       34480  1.0249072E+08
+  NOTICE   main:           58    58007474       34480  1.0244605E+08
+  NOTICE   main:           58    58007476       34480  1.0240064E+08
+  NOTICE   main:           58    58007478       34480  1.0235278E+08
+  NOTICE   main:           58    58007480       34480  1.0230490E+08
+  NOTICE   main:           58    58007482       34480  1.0225600E+08
+  NOTICE   main:           58    58007484       34480  1.0220731E+08
+  NOTICE   main:           58    58007486       34480  1.0215514E+08
+  NOTICE   main:           58    58007488       34480  1.0210278E+08
+  NOTICE   main:           58    58007490       34480  1.0205240E+08
+  NOTICE   main:           58    58007492       34480  1.0199898E+08
+  NOTICE   main:           58    58007494       34480  1.0194398E+08
+  NOTICE   main:           58    58007496       34480  1.0189061E+08
+  NOTICE   main:           58    58007498       34480  1.0183624E+08
+  NOTICE   main:           58    58007500       34480  1.0178101E+08
+  NOTICE   main:           58    58007502       34480  1.0172432E+08
+  NOTICE   main:           58    58007504       34480  1.0167306E+08
+  NOTICE   main:           58    58007506       34480  1.0162299E+08
+  NOTICE   main:           58    58007508       34480  1.0156946E+08
+  NOTICE   main:           58    58007510       34480  1.0151808E+08
+  NOTICE   main:           58    58007512       34480  1.0146766E+08
+  NOTICE   main:           58    58007514       34480  1.0141773E+08
+  NOTICE   main:           58    58007516       34480  1.0136912E+08
+  NOTICE   main:           58    58007518       34480  1.0131970E+08
+  NOTICE   main:           58    58007520       34480  1.0127123E+08
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58007700    58007340
+  NOTICE metinp: GDAS 1 2789  360  181    1    1 58007700 10  4 17  3
+  NOTICE   main:           59    58007522       34480  1.0122158E+08
+  NOTICE   main:           59    58007524       34480  1.0117213E+08
+  NOTICE   main:           59    58007526       34480  1.0112470E+08
+  NOTICE   main:           59    58007528       34480  1.0107867E+08
+  NOTICE   main:           59    58007530       34480  1.0103074E+08
+  NOTICE   main:           59    58007532       34480  1.0098200E+08
+  NOTICE   main:           59    58007534       34480  1.0093608E+08
+  NOTICE   main:           59    58007536       34480  1.0089091E+08
+  NOTICE   main:           59    58007538       34480  1.0084178E+08
+  NOTICE   main:           59    58007540       34480  1.0079236E+08
+  NOTICE   main:           59    58007542       34480  1.0074750E+08
+  NOTICE   main:           59    58007544       34480  1.0070224E+08
+  NOTICE   main:           59    58007546       34480  1.0065864E+08
+  NOTICE   main:           59    58007548       34480  1.0061418E+08
+  NOTICE   main:           59    58007550       34480  1.0056984E+08
+  NOTICE   main:           59    58007552       34480  1.0052562E+08
+  NOTICE   main:           59    58007554       34480  1.0048288E+08
+  NOTICE   main:           59    58007556       34480  1.0043706E+08
+  NOTICE   main:           59    58007558       34480  1.0039237E+08
+  NOTICE   main:           59    58007560       34480  1.0034685E+08
+  NOTICE   main:           59    58007562       34480  1.0030094E+08
+  NOTICE   main:           59    58007564       34480  1.0025254E+08
+  NOTICE   main:           59    58007566       34480  1.0020123E+08
+  NOTICE   main:           59    58007568       34480  1.0015130E+08
+  NOTICE   main:           59    58007570       34480  1.0010136E+08
+  NOTICE   main:           59    58007572       34480  1.0005123E+08
+  NOTICE   main:           59    58007574       34480  1.0000272E+08
+  NOTICE   main:           59    58007576       34480  9.9956784E+07
+  NOTICE   main:           59    58007578       34480  9.9907216E+07
+  NOTICE   main:           59    58007580       34480  9.9859728E+07
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           60    58007582       34480  9.9813360E+07
+  NOTICE   main:           60    58007584       34480  9.9765936E+07
+  NOTICE   main:           60    58007586       34480  9.9717984E+07
+  NOTICE   main:           60    58007588       34480  9.9672912E+07
+  NOTICE   main:           60    58007590       34480  9.9625824E+07
+  NOTICE   main:           60    58007592       34480  9.9579504E+07
+  NOTICE   main:           60    58007594       34480  9.9530288E+07
+  NOTICE   main:           60    58007596       34480  9.9480816E+07
+  NOTICE   main:           60    58007598       34480  9.9432064E+07
+  NOTICE   main:           60    58007600       34480  9.9383424E+07
+  NOTICE   main:           60    58007602       34480  9.9333184E+07
+  NOTICE   main:           60    58007604       34480  9.9284816E+07
+  NOTICE   main:           60    58007606       34480  9.9237568E+07
+  NOTICE   main:           60    58007608       34480  9.9189488E+07
+  NOTICE   main:           60    58007610       34480  9.9141856E+07
+  NOTICE   main:           60    58007612       34480  9.9090832E+07
+  NOTICE   main:           60    58007614       34480  9.9037856E+07
+  NOTICE   main:           60    58007616       34480  9.8988624E+07
+  NOTICE   main:           60    58007618       34480  9.8938688E+07
+  NOTICE   main:           60    58007620       34480  9.8886160E+07
+  NOTICE   main:           60    58007622       34480  9.8838224E+07
+  NOTICE   main:           60    58007624       34480  9.8787952E+07
+  NOTICE   main:           60    58007626       34480  9.8734224E+07
+  NOTICE   main:           60    58007628       34480  9.8683728E+07
+  NOTICE   main:           60    58007630       34480  9.8636128E+07
+  NOTICE   main:           60    58007632       34480  9.8587392E+07
+  NOTICE   main:           60    58007634       34480  9.8540848E+07
+  NOTICE   main:           60    58007636       34480  9.8490928E+07
+  NOTICE   main:           60    58007638       34480  9.8438928E+07
+  NOTICE condsk:  1 output at    4  17   2   0
+  NOTICE   main:           60    58007640       34480  9.8385264E+07
+  NOTICE parout:   10   4  17   2   0    Num=   34480
+                                                        Index  Height %Mass
+                                                           20 11505.0  0.02
+                                                           19 10360.0  0.56
+                                                           18  9275.0  1.97
+                                                           17  8250.0  5.43
+                                                           16  7285.0  4.39
+                                                           15  6380.0  3.65
+                                                           14  5535.0  4.00
+                                                           13  4750.0  6.00
+                                                           12  4025.0  6.73
+                                                           11  3360.0  8.72
+                                                           10  2755.0 11.93
+                                                            9  2210.0 11.24
+                                                            8  1725.0 10.37
+                                                            7  1300.0  5.10
+                                                            6   935.0  5.05
+                                                            5   630.0  4.45
+                                                            4   385.0  3.69
+                                                            3   200.0  3.51
+                                                            2    75.0  2.39
+                                                            1    10.0  0.84
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           61    58007642       34480  9.8333104E+07
+  NOTICE   main:           61    58007644       34480  9.8279552E+07
+  NOTICE   main:           61    58007646       34480  9.8226528E+07
+  NOTICE   main:           61    58007648       34480  9.8178864E+07
+  NOTICE   main:           61    58007650       34480  9.8132240E+07
+  NOTICE   main:           61    58007652       34480  9.8082544E+07
+  NOTICE   main:           61    58007654       34480  9.8033776E+07
+  NOTICE   main:           61    58007656       34480  9.7984480E+07
+  NOTICE   main:           61    58007658       34480  9.7938096E+07
+  NOTICE   main:           61    58007660       34480  9.7891840E+07
+  NOTICE   main:           61    58007662       34480  9.7846688E+07
+  NOTICE   main:           61    58007664       34480  9.7802128E+07
+  NOTICE   main:           61    58007666       34480  9.7756720E+07
+  NOTICE   main:           61    58007668       34480  9.7711552E+07
+  NOTICE   main:           61    58007670       34480  9.7667408E+07
+  NOTICE   main:           61    58007672       34480  9.7622016E+07
+  NOTICE   main:           61    58007674       34480  9.7576304E+07
+  NOTICE   main:           61    58007676       34480  9.7529008E+07
+  NOTICE   main:           61    58007678       34480  9.7482432E+07
+  NOTICE   main:           61    58007680       34480  9.7437968E+07
+  NOTICE   main:           61    58007682       34480  9.7395168E+07
+  NOTICE   main:           61    58007684       34480  9.7351152E+07
+  NOTICE   main:           61    58007686       34480  9.7304720E+07
+  NOTICE   main:           61    58007688       34480  9.7260928E+07
+  NOTICE   main:           61    58007690       34480  9.7216800E+07
+  NOTICE   main:           61    58007692       34480  9.7173232E+07
+  NOTICE   main:           61    58007694       34480  9.7133760E+07
+  NOTICE   main:           61    58007696       34480  9.7091056E+07
+  NOTICE   main:           61    58007698       34480  9.7046288E+07
+  NOTICE   main:           61    58007700       34480  9.7000464E+07
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58007880    58007520
+  NOTICE metinp: GDAS 1 2953  360  181    1    1 58007880 10  4 17  6
+  NOTICE   main:           62    58007702       34480  9.6953248E+07
+  NOTICE   main:           62    58007704       34480  9.6908912E+07
+  NOTICE   main:           62    58007706       34480  9.6867408E+07
+  NOTICE   main:           62    58007708       34480  9.6825664E+07
+  NOTICE   main:           62    58007710       34480  9.6785424E+07
+  NOTICE   main:           62    58007712       34480  9.6744176E+07
+  NOTICE   main:           62    58007714       34480  9.6703936E+07
+  NOTICE   main:           62    58007716       34480  9.6665520E+07
+  NOTICE   main:           62    58007718       34480  9.6628592E+07
+  NOTICE   main:           62    58007720       34480  9.6594400E+07
+  NOTICE   main:           62    58007722       34480  9.6560784E+07
+  NOTICE   main:           62    58007724       34480  9.6526160E+07
+  NOTICE   main:           62    58007726       34480  9.6490112E+07
+  NOTICE   main:           62    58007728       34480  9.6454480E+07
+  NOTICE   main:           62    58007730       34480  9.6417008E+07
+  NOTICE   main:           62    58007732       34480  9.6379472E+07
+  NOTICE   main:           62    58007734       34480  9.6340144E+07
+  NOTICE   main:           62    58007736       34480  9.6300704E+07
+  NOTICE   main:           62    58007738       34480  9.6260704E+07
+  NOTICE   main:           62    58007740       34480  9.6221248E+07
+  NOTICE   main:           62    58007742       34480  9.6183216E+07
+  NOTICE   main:           62    58007744       34480  9.6144400E+07
+  NOTICE   main:           62    58007746       34480  9.6103568E+07
+  NOTICE   main:           62    58007748       34480  9.6061808E+07
+  NOTICE   main:           62    58007750       34480  9.6021984E+07
+  NOTICE   main:           62    58007752       34480  9.5985136E+07
+  NOTICE   main:           62    58007754       34480  9.5949184E+07
+  NOTICE   main:           62    58007756       34480  9.5912080E+07
+  NOTICE   main:           62    58007758       34480  9.5874384E+07
+  NOTICE   main:           62    58007760       34480  9.5835584E+07
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           63    58007762       34480  9.5798304E+07
+  NOTICE   main:           63    58007764       34480  9.5762800E+07
+  NOTICE   main:           63    58007766       34480  9.5727856E+07
+  NOTICE   main:           63    58007768       34480  9.5691440E+07
+  NOTICE   main:           63    58007770       34480  9.5653376E+07
+  NOTICE   main:           63    58007772       34480  9.5615336E+07
+  NOTICE   main:           63    58007774       34480  9.5576280E+07
+  NOTICE   main:           63    58007776       34480  9.5534592E+07
+  NOTICE   main:           63    58007778       34480  9.5492480E+07
+  NOTICE   main:           63    58007780       34480  9.5453680E+07
+  NOTICE   main:           63    58007782       34480  9.5413896E+07
+  NOTICE   main:           63    58007784       34480  9.5374504E+07
+  NOTICE   main:           63    58007786       34480  9.5333400E+07
+  NOTICE   main:           63    58007788       34480  9.5293104E+07
+  NOTICE   main:           63    58007790       34480  9.5254384E+07
+  NOTICE   main:           63    58007792       34480  9.5216512E+07
+  NOTICE   main:           63    58007794       34480  9.5181432E+07
+  NOTICE   main:           63    58007796       34480  9.5149640E+07
+  NOTICE   main:           63    58007798       34480  9.5118712E+07
+  NOTICE   main:           63    58007800       34480  9.5088056E+07
+  NOTICE   main:           63    58007802       34480  9.5056152E+07
+  NOTICE   main:           63    58007804       34480  9.5024920E+07
+  NOTICE   main:           63    58007806       34480  9.4991768E+07
+  NOTICE   main:           63    58007808       34480  9.4959384E+07
+  NOTICE   main:           63    58007810       34480  9.4929480E+07
+  NOTICE   main:           63    58007812       34480  9.4899144E+07
+  NOTICE   main:           63    58007814       34480  9.4868008E+07
+  NOTICE   main:           63    58007816       34480  9.4832248E+07
+  NOTICE   main:           63    58007818       34480  9.4799912E+07
+  NOTICE   main:           63    58007820       34480  9.4769816E+07
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           64    58007822       34480  9.4740536E+07
+  NOTICE   main:           64    58007824       34480  9.4712808E+07
+  NOTICE   main:           64    58007826       34480  9.4685416E+07
+  NOTICE   main:           64    58007828       34480  9.4660184E+07
+  NOTICE   main:           64    58007830       34480  9.4634168E+07
+  NOTICE   main:           64    58007832       34480  9.4607336E+07
+  NOTICE   main:           64    58007834       34480  9.4580904E+07
+  NOTICE   main:           64    58007836       34480  9.4554456E+07
+  NOTICE   main:           64    58007838       34480  9.4527800E+07
+  NOTICE   main:           64    58007840       34480  9.4500872E+07
+  NOTICE   main:           64    58007842       34480  9.4470504E+07
+  NOTICE   main:           64    58007844       34480  9.4438296E+07
+  NOTICE   main:           64    58007846       34480  9.4406920E+07
+  NOTICE   main:           64    58007848       34480  9.4377416E+07
+  NOTICE   main:           64    58007850       34480  9.4349640E+07
+  NOTICE   main:           64    58007852       34480  9.4320104E+07
+  NOTICE   main:           64    58007854       34480  9.4292584E+07
+  NOTICE   main:           64    58007856       34480  9.4264072E+07
+  NOTICE   main:           64    58007858       34480  9.4235592E+07
+  NOTICE   main:           64    58007860       34480  9.4206120E+07
+  NOTICE   main:           64    58007862       34480  9.4179160E+07
+  NOTICE   main:           64    58007864       34480  9.4152248E+07
+  NOTICE   main:           64    58007866       34480  9.4122776E+07
+  NOTICE   main:           64    58007868       34480  9.4091704E+07
+  NOTICE   main:           64    58007870       34480  9.4059880E+07
+  NOTICE   main:           64    58007872       34480  9.4028168E+07
+  NOTICE   main:           64    58007874       34480  9.3997976E+07
+  NOTICE   main:           64    58007876       34480  9.3966760E+07
+  NOTICE   main:           64    58007878       34480  9.3937272E+07
+  NOTICE   main:           64    58007880       34480  9.3908280E+07
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58008060    58007700
+  NOTICE metinp: GDAS 1 3117  360  181    1    1 58008060 10  4 17  9
+  NOTICE   main:           65    58007882       34480  9.3880176E+07
+  NOTICE   main:           65    58007884       34480  9.3851632E+07
+  NOTICE   main:           65    58007886       34480  9.3819968E+07
+  NOTICE   main:           65    58007888       34480  9.3788152E+07
+  NOTICE   main:           65    58007890       34480  9.3757080E+07
+  NOTICE   main:           65    58007892       34480  9.3725936E+07
+  NOTICE   main:           65    58007894       34480  9.3695808E+07
+  NOTICE   main:           65    58007896       34480  9.3664280E+07
+  NOTICE   main:           65    58007898       34480  9.3631264E+07
+  NOTICE   main:           65    58007900       34480  9.3596824E+07
+  NOTICE   main:           65    58007902       34480  9.3563200E+07
+  NOTICE   main:           65    58007904       34480  9.3529664E+07
+  NOTICE   main:           65    58007906       34480  9.3495984E+07
+  NOTICE   main:           65    58007908       34480  9.3464976E+07
+  NOTICE   main:           65    58007910       34480  9.3433712E+07
+  NOTICE   main:           65    58007912       34480  9.3400992E+07
+  NOTICE   main:           65    58007914       34480  9.3367648E+07
+  NOTICE   main:           65    58007916       34480  9.3335584E+07
+  NOTICE   main:           65    58007918       34480  9.3307376E+07
+  NOTICE   main:           65    58007920       34480  9.3281664E+07
+  NOTICE   main:           65    58007922       34480  9.3256528E+07
+  NOTICE   main:           65    58007924       34480  9.3228864E+07
+  NOTICE   main:           65    58007926       34480  9.3200624E+07
+  NOTICE   main:           65    58007928       34480  9.3173232E+07
+  NOTICE   main:           65    58007930       34480  9.3146272E+07
+  NOTICE   main:           65    58007932       34480  9.3116512E+07
+  NOTICE   main:           65    58007934       34480  9.3084912E+07
+  NOTICE   main:           65    58007936       34480  9.3054464E+07
+  NOTICE   main:           65    58007938       34480  9.3022512E+07
+  NOTICE   main:           65    58007940       34480  9.2993648E+07
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           66    58007942       34480  9.2964816E+07
+  NOTICE   main:           66    58007944       34480  9.2935296E+07
+  NOTICE   main:           66    58007946       34480  9.2907232E+07
+  NOTICE   main:           66    58007948       34480  9.2878304E+07
+  NOTICE   main:           66    58007950       34480  9.2849424E+07
+  NOTICE   main:           66    58007952       34480  9.2820432E+07
+  NOTICE   main:           66    58007954       34480  9.2790208E+07
+  NOTICE   main:           66    58007956       34480  9.2762224E+07
+  NOTICE   main:           66    58007958       34480  9.2731480E+07
+  NOTICE   main:           66    58007960       34480  9.2700432E+07
+  NOTICE   main:           66    58007962       34480  9.2671928E+07
+  NOTICE   main:           66    58007964       34480  9.2645696E+07
+  NOTICE   main:           66    58007966       34480  9.2619456E+07
+  NOTICE   main:           66    58007968       34480  9.2594720E+07
+  NOTICE   main:           66    58007970       34480  9.2568736E+07
+  NOTICE   main:           66    58007972       34480  9.2540656E+07
+  NOTICE   main:           66    58007974       34480  9.2515080E+07
+  NOTICE   main:           66    58007976       34480  9.2491400E+07
+  NOTICE   main:           66    58007978       34480  9.2469072E+07
+  NOTICE   main:           66    58007980       34480  9.2446736E+07
+  NOTICE   main:           66    58007982       34480  9.2422016E+07
+  NOTICE   main:           66    58007984       34480  9.2397776E+07
+  NOTICE   main:           66    58007986       34480  9.2375632E+07
+  NOTICE   main:           66    58007988       34480  9.2352816E+07
+  NOTICE   main:           66    58007990       34480  9.2328960E+07
+  NOTICE   main:           66    58007992       34480  9.2307248E+07
+  NOTICE   main:           66    58007994       34480  9.2287928E+07
+  NOTICE   main:           66    58007996       34480  9.2268768E+07
+  NOTICE   main:           66    58007998       34480  9.2248504E+07
+  NOTICE condsk:  1 output at    4  17   8   0
+  NOTICE   main:           66    58008000       34480  9.2228936E+07
+  NOTICE parout:   10   4  17   8   0    Num=   34480
+                                                        Index  Height %Mass
+                                                           20 11505.0  0.01
+                                                           19 10360.0  0.48
+                                                           18  9275.0  1.69
+                                                           17  8250.0  5.83
+                                                           16  7285.0  5.58
+                                                           15  6380.0  4.07
+                                                           14  5535.0  3.94
+                                                           13  4750.0  5.01
+                                                           12  4025.0  6.56
+                                                           11  3360.0  7.54
+                                                           10  2755.0  9.82
+                                                            9  2210.0 11.00
+                                                            8  1725.0 11.24
+                                                            7  1300.0  7.65
+                                                            6   935.0  5.60
+                                                            5   630.0  5.01
+                                                            4   385.0  3.97
+                                                            3   200.0  2.76
+                                                            2    75.0  1.59
+                                                            1    10.0  0.67
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           67    58008002       34480  9.2208880E+07
+  NOTICE   main:           67    58008004       34480  9.2190264E+07
+  NOTICE   main:           67    58008006       34480  9.2171368E+07
+  NOTICE   main:           67    58008008       34480  9.2154664E+07
+  NOTICE   main:           67    58008010       34480  9.2135704E+07
+  NOTICE   main:           67    58008012       34480  9.2117352E+07
+  NOTICE   main:           67    58008014       34480  9.2098632E+07
+  NOTICE   main:           67    58008016       34480  9.2076488E+07
+  NOTICE   main:           67    58008018       34480  9.2053816E+07
+  NOTICE   main:           67    58008020       34480  9.2033560E+07
+  NOTICE   main:           67    58008022       34480  9.2014744E+07
+  NOTICE   main:           67    58008024       34480  9.1994472E+07
+  NOTICE   main:           67    58008026       34480  9.1973464E+07
+  NOTICE   main:           67    58008028       34480  9.1954248E+07
+  NOTICE   main:           67    58008030       34480  9.1931240E+07
+  NOTICE   main:           67    58008032       34480  9.1907080E+07
+  NOTICE   main:           67    58008034       34480  9.1884168E+07
+  NOTICE   main:           67    58008036       34480  9.1864504E+07
+  NOTICE   main:           67    58008038       34480  9.1844536E+07
+  NOTICE   main:           67    58008040       34480  9.1821672E+07
+  NOTICE   main:           67    58008042       34480  9.1799864E+07
+  NOTICE   main:           67    58008044       34480  9.1777384E+07
+  NOTICE   main:           67    58008046       34480  9.1758520E+07
+  NOTICE   main:           67    58008048       34480  9.1740920E+07
+  NOTICE   main:           67    58008050       34480  9.1725288E+07
+  NOTICE   main:           67    58008052       34480  9.1709272E+07
+  NOTICE   main:           67    58008054       34480  9.1689944E+07
+  NOTICE   main:           67    58008056       34480  9.1668808E+07
+  NOTICE   main:           67    58008058       34480  9.1646696E+07
+  NOTICE   main:           67    58008060       34480  9.1626488E+07
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58008240    58007880
+  NOTICE metinp: GDAS 1 3281  360  181    1    1 58008240 10  4 17 12
+  NOTICE   main:           68    58008062       34480  9.1605896E+07
+  NOTICE   main:           68    58008064       34480  9.1585912E+07
+  NOTICE   main:           68    58008066       34480  9.1566920E+07
+  NOTICE   main:           68    58008068       34480  9.1548440E+07
+  NOTICE   main:           68    58008070       34480  9.1531512E+07
+  NOTICE   main:           68    58008072       34480  9.1514024E+07
+  NOTICE   main:           68    58008074       34480  9.1495256E+07
+  NOTICE   main:           68    58008076       34480  9.1476104E+07
+  NOTICE   main:           68    58008078       34480  9.1458392E+07
+  NOTICE   main:           68    58008080       34480  9.1438672E+07
+  NOTICE   main:           68    58008082       34480  9.1419488E+07
+  NOTICE   main:           68    58008084       34480  9.1402224E+07
+  NOTICE   main:           68    58008086       34480  9.1383816E+07
+  NOTICE   main:           68    58008088       34480  9.1366304E+07
+  NOTICE   main:           68    58008090       34480  9.1347024E+07
+  NOTICE   main:           68    58008092       34480  9.1327568E+07
+  NOTICE   main:           68    58008094       34480  9.1309768E+07
+  NOTICE   main:           68    58008096       34480  9.1290856E+07
+  NOTICE   main:           68    58008098       34480  9.1269800E+07
+  NOTICE   main:           68    58008100       34480  9.1249144E+07
+  NOTICE   main:           68    58008102       34480  9.1230024E+07
+  NOTICE   main:           68    58008104       34480  9.1209336E+07
+  NOTICE   main:           68    58008106       34480  9.1191736E+07
+  NOTICE   main:           68    58008108       34480  9.1173992E+07
+  NOTICE   main:           68    58008110       34480  9.1154248E+07
+  NOTICE   main:           68    58008112       34480  9.1132512E+07
+  NOTICE   main:           68    58008114       34480  9.1113016E+07
+  NOTICE   main:           68    58008116       34480  9.1092416E+07
+  NOTICE   main:           68    58008118       34480  9.1072640E+07
+  NOTICE   main:           68    58008120       34480  9.1052960E+07
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           69    58008122       34480  9.1035312E+07
+  NOTICE   main:           69    58008124       34480  9.1016664E+07
+  NOTICE   main:           69    58008126       34480  9.0996560E+07
+  NOTICE   main:           69    58008128       34480  9.0977928E+07
+  NOTICE   main:           69    58008130       34480  9.0957120E+07
+  NOTICE   main:           69    58008132       34480  9.0935320E+07
+  NOTICE   main:           69    58008134       34480  9.0916472E+07
+  NOTICE   main:           69    58008136       34480  9.0896200E+07
+  NOTICE   main:           69    58008138       34480  9.0877512E+07
+  NOTICE   main:           69    58008140       34480  9.0861816E+07
+  NOTICE   main:           69    58008142       34480  9.0840216E+07
+  NOTICE   main:           69    58008144       34480  9.0818808E+07
+  NOTICE   main:           69    58008146       34480  9.0795016E+07
+  NOTICE   main:           69    58008148       34480  9.0772632E+07
+  NOTICE   main:           69    58008150       34480  9.0750896E+07
+  NOTICE   main:           69    58008152       34480  9.0731640E+07
+  NOTICE   main:           69    58008154       34480  9.0708744E+07
+  NOTICE   main:           69    58008156       34480  9.0685448E+07
+  NOTICE   main:           69    58008158       34480  9.0663496E+07
+  NOTICE   main:           69    58008160       34480  9.0637768E+07
+  NOTICE   main:           69    58008162       34480  9.0614304E+07
+  NOTICE   main:           69    58008164       34480  9.0591512E+07
+  NOTICE   main:           69    58008166       34480  9.0570632E+07
+  NOTICE   main:           69    58008168       34480  9.0548800E+07
+  NOTICE   main:           69    58008170       34480  9.0528016E+07
+  NOTICE   main:           69    58008172       34480  9.0508528E+07
+  NOTICE   main:           69    58008174       34480  9.0490272E+07
+  NOTICE   main:           69    58008176       34480  9.0471072E+07
+  NOTICE   main:           69    58008178       34480  9.0450464E+07
+  NOTICE   main:           69    58008180       34480  9.0431792E+07
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           70    58008182       34480  9.0410320E+07
+  NOTICE   main:           70    58008184       34480  9.0392512E+07
+  NOTICE   main:           70    58008186       34480  9.0376224E+07
+  NOTICE   main:           70    58008188       34480  9.0361328E+07
+  NOTICE   main:           70    58008190       34480  9.0344736E+07
+  NOTICE   main:           70    58008192       34480  9.0326448E+07
+  NOTICE   main:           70    58008194       34480  9.0308224E+07
+  NOTICE   main:           70    58008196       34480  9.0286880E+07
+  NOTICE   main:           70    58008198       34480  9.0266856E+07
+  NOTICE   main:           70    58008200       34480  9.0246040E+07
+  NOTICE   main:           70    58008202       34480  9.0227912E+07
+  NOTICE   main:           70    58008204       34480  9.0207904E+07
+  NOTICE   main:           70    58008206       34480  9.0189632E+07
+  NOTICE   main:           70    58008208       34480  9.0171376E+07
+  NOTICE   main:           70    58008210       34480  9.0154288E+07
+  NOTICE   main:           70    58008212       34480  9.0137192E+07
+  NOTICE   main:           70    58008214       34480  9.0121376E+07
+  NOTICE   main:           70    58008216       34480  9.0107608E+07
+  NOTICE   main:           70    58008218       34480  9.0091696E+07
+  NOTICE   main:           70    58008220       34480  9.0074304E+07
+  NOTICE   main:           70    58008222       34480  9.0052688E+07
+  NOTICE   main:           70    58008224       34480  9.0033480E+07
+  NOTICE   main:           70    58008226       34480  9.0012896E+07
+  NOTICE   main:           70    58008228       34480  8.9992632E+07
+  NOTICE   main:           70    58008230       34480  8.9973488E+07
+  NOTICE   main:           70    58008232       34480  8.9953200E+07
+  NOTICE   main:           70    58008234       34480  8.9933392E+07
+  NOTICE   main:           70    58008236       34480  8.9915440E+07
+  NOTICE   main:           70    58008238       34480  8.9896240E+07
+  NOTICE   main:           70    58008240       34480  8.9877752E+07
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE metpos: (mtime,ftime) -     58008420    58008060
+  NOTICE metinp: GDAS 1 3445  360  181    1    1 58008420 10  4 17 15
+  NOTICE   main:           71    58008242       34480  8.9860528E+07
+  NOTICE   main:           71    58008244       34480  8.9844088E+07
+  NOTICE   main:           71    58008246       34480  8.9827320E+07
+  NOTICE   main:           71    58008248       34480  8.9810064E+07
+  NOTICE   main:           71    58008250       34480  8.9790760E+07
+  NOTICE   main:           71    58008252       34480  8.9773240E+07
+  NOTICE   main:           71    58008254       34480  8.9756224E+07
+  NOTICE   main:           71    58008256       34480  8.9738352E+07
+  NOTICE   main:           71    58008258       34480  8.9720352E+07
+  NOTICE   main:           71    58008260       34480  8.9703064E+07
+  NOTICE   main:           71    58008262       34480  8.9686048E+07
+  NOTICE   main:           71    58008264       34480  8.9669568E+07
+  NOTICE   main:           71    58008266       34480  8.9650704E+07
+  NOTICE   main:           71    58008268       34480  8.9632368E+07
+  NOTICE   main:           71    58008270       34480  8.9615560E+07
+  NOTICE   main:           71    58008272       34480  8.9597136E+07
+  NOTICE   main:           71    58008274       34480  8.9578720E+07
+  NOTICE   main:           71    58008276       34480  8.9562960E+07
+  NOTICE   main:           71    58008278       34480  8.9545840E+07
+  NOTICE   main:           71    58008280       34480  8.9528632E+07
+  NOTICE   main:           71    58008282       34480  8.9511560E+07
+  NOTICE   main:           71    58008284       34480  8.9492120E+07
+  NOTICE   main:           71    58008286       34480  8.9471504E+07
+  NOTICE   main:           71    58008288       34480  8.9453096E+07
+  NOTICE   main:           71    58008290       34480  8.9437880E+07
+  NOTICE   main:           71    58008292       34480  8.9421344E+07
+  NOTICE   main:           71    58008294       34480  8.9404344E+07
+  NOTICE   main:           71    58008296       34480  8.9389000E+07
+  NOTICE   main:           71    58008298       34480  8.9375232E+07
+  NOTICE   main:           71    58008300       34480  8.9361280E+07
+  NOTICE advrng: (kg ,xyr,xy1) -  1  360  181    1    1
+  NOTICE   main:           72    58008302       34480  8.9344936E+07
+  NOTICE   main:           72    58008304       34480  8.9325832E+07
+  NOTICE   main:           72    58008306       34480  8.9307080E+07
+  NOTICE   main:           72    58008308       34480  8.9288104E+07
+  NOTICE   main:           72    58008310       34480  8.9267640E+07
+  NOTICE   main:           72    58008312       34480  8.9246304E+07
+  NOTICE   main:           72    58008314       34480  8.9228320E+07
+  NOTICE   main:           72    58008316       34480  8.9209848E+07
+  NOTICE   main:           72    58008318       34480  8.9190736E+07
+  NOTICE   main:           72    58008320       34480  8.9168432E+07
+  NOTICE   main:           72    58008322       34480  8.9147784E+07
+  NOTICE   main:           72    58008324       34480  8.9126192E+07
+  NOTICE   main:           72    58008326       34480  8.9103856E+07
+  NOTICE   main:           72    58008328       34480  8.9083512E+07
+  NOTICE   main:           72    58008330       34480  8.9064792E+07
+  NOTICE   main:           72    58008332       34480  8.9046288E+07
+  NOTICE   main:           72    58008334       34480  8.9028128E+07
+  NOTICE   main:           72    58008336       34480  8.9011824E+07
+  NOTICE   main:           72    58008338       34480  8.8996112E+07
+  NOTICE   main:           72    58008340       34480  8.8981496E+07
+  NOTICE   main:           72    58008342       34480  8.8963432E+07
+  NOTICE   main:           72    58008344       34480  8.8945640E+07
+  NOTICE   main:           72    58008346       34480  8.8927824E+07
+  NOTICE   main:           72    58008348       34480  8.8909232E+07
+  NOTICE   main:           72    58008350       34480  8.8888736E+07
+  NOTICE   main:           72    58008352       34480  8.8870152E+07
+  NOTICE   main:           72    58008354       34480  8.8850824E+07
+  NOTICE   main:           72    58008356       34480  8.8828312E+07
+  NOTICE   main:           72    58008358       34480  8.8805392E+07
+  NOTICE condsk:  1 output at    4  17  14   0
+  NOTICE   main:           72    58008360       34480  8.8780608E+07
+  NOTICE parout:   10   4  17  14   0    Num=   34480
+                                                        Index  Height %Mass
+                                                           20 11505.0  0.01
+                                                           19 10360.0  0.32
+                                                           18  9275.0  1.15
+                                                           17  8250.0  5.86
+                                                           16  7285.0  6.34
+                                                           15  6380.0  4.54
+                                                           14  5535.0  4.30
+                                                           13  4750.0  4.62
+                                                           12  4025.0  6.49
+                                                           11  3360.0  6.37
+                                                           10  2755.0  8.18
+                                                            9  2210.0  9.70
+                                                            8  1725.0 10.97
+                                                            7  1300.0  9.88
+                                                            6   935.0  6.99
+                                                            5   630.0  4.97
+                                                            4   385.0  4.03
+                                                            3   200.0  2.91
+                                                            2    75.0  1.71
+                                                            1    10.0  0.67

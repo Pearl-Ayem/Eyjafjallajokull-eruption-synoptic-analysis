@@ -1,0 +1,17 @@
+10 04 14 14 0  
+1                  
+63.633000 -19.633000 10.0      
+0                  
+0                  
+10000.0            
+5                #NUMBER nextfile mfile OF INPUT DATA GRIDS
+/pub/archives/gdas1/
+gdas1.apr10.w2
+/pub/archives/gdas1/
+gdas1.apr10.w1
+/pub/archives/gdas1/
+gdas1.apr10.w3
+/pub/archives/gdas1/
+gdas1.apr10.w4
+/pub/archives/gdas1/
+gdas1.apr10.w5

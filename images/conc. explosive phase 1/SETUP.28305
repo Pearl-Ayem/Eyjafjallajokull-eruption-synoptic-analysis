@@ -1,0 +1,11 @@
+&SETUP
+NUMPAR = 34000,
+MAXPAR = 150000,
+INITD = 0,
+ndump = 6,
+ncycl = 6,
+poutf = 'PARDUMP.28305',
+KMSL=1,
+KBLT=2,
+KDEF=0,
+/
