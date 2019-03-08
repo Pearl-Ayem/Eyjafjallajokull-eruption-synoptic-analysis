@@ -1,0 +1,67 @@
+10 05 05 14 0			#STARTING YEAR MONTH DAY HOUR MINUTES
+2				#NUMBER OF SOURCE LOCATIONS
+63.633000 -19.633000 5000              #SOURCE 1 LATITUDE LONGITUDE HEIGHT(m-msl)
+63.633000 -19.633000 10000			#SOURCE 2 LATITUDE LONGITUDE HEIGHT
+72				#TOTAL RUN TIME (hours)
+0				#USE MODEL VERTICAL VELOCITY
+32000                #TOP OF MODEL DOMAIN (m-AGL)
+5                #NUMBER nextfile mfile OF INPUT DATA GRIDS
+/pub/archives/gdas1/
+gdas1.may10.w1
+/pub/archives/gdas1/
+gdas1.apr10.w5
+/pub/archives/gdas1/
+gdas1.may10.w2
+/pub/archives/gdas1/
+gdas1.may10.w3
+/pub/archives/gdas1/
+gdas1.may10.w4
+4				#NUMBER OF DIFFERENT POLLUTANTS
+par1                 #POLLUTANT IDENTIFICATION
+288000                  #EMISSION RATE (per hour)
+6                    #HOURS OF EMISSION
+10 05 05 14 0       #RELEASE START TIME:YEAR MONTH DAY HOUR MINUTE
+par2                 #POLLUTANT IDENTIFICATION
+2412000                  #EMISSION RATE (per hour)
+6                    #HOURS OF EMISSION
+10 05 05 14 0       #RELEASE START TIME:YEAR MONTH DAY HOUR MINUTE
+par3                 #POLLUTANT IDENTIFICATION
+9252000                  #EMISSION RATE (per hour)
+6                    #HOURS OF EMISSION
+10 05 05 14 0       #RELEASE START TIME:YEAR MONTH DAY HOUR MINUTE
+par4                 #POLLUTANT IDENTIFICATION
+24048000                  #EMISSION RATE (per hour)
+6                    #HOURS OF EMISSION
+10 05 05 14 0       #RELEASE START TIME:YEAR MONTH DAY HOUR MINUTE
+1                        #NUMBER OF CONCENTRATION GRIDS
+0 0                           #CONC GRID CENTER LATITUDE LONGITUDE
+0.3 0.3     #CONC GRID SPACING (degrees) LATITUDE LONGITUDE
+180.0 360.0                         #CONC GRID SPAN (degrees) LATITUDE LONGITUDE
+/pub/ready/hypub/
+cdump1.28390
+1                             #NUMBER OF VERTICAL CONCENTRATION LEVELS
+18000                        #HEIGHT OF EACH CONCENTRATION LEVEL (m-msl)
+10 05 05 14 00            #SAMPLING START TIME:YEAR MONTH DAY HOUR MINUTE
+00 00 00 72 00                 #SAMPLING STOP TIME:YEAR MONTH DAY HOUR MINUTE
+0 6 0                     #SAMPLING INTERVAL: TYPE HOUR MINUTE
+4                           #NUMBER OF DEPOSITING POLLUTANTS
+0.6 2.5 1.0     #PARTICLE:DIAMETER (um), DENSITY (g/cc), SHAPE
+0.0 0.0 0.0 0.0 0.0    #DEP VEL (m/s), MW (g/Mole), SFC REACT. RATIO, DIFFUSIVITY RATIO, HENRY'S CONSTANT
+0.0 0.0 0.0   #WET REMOVAL: HENRY'S (Molar/atm), IN-CLOUD (1/s), BELOW-CLOUD (1/s)
+0                        #RADIOACTIVE DECAY HALF-LIFE (days)
+0.0                      #POLLUTANT RESUSPENSION (1/m)
+2.0 2.5 1.0     #PARTICLE:DIAMETER (um), DENSITY (g/cc), SHAPE
+0.0 0.0 0.0 0.0 0.0    #DEP VEL (m/s), MW (g/Mole), SFC REACT. RATIO, DIFFUSIVITY RATIO, HENRY'S CONSTANT
+0.0 0.0 0.0   #WET REMOVAL: HENRY'S (Molar/atm), IN-CLOUD (1/s), BELOW-CLOUD (1/s)
+0                        #RADIOACTIVE DECAY HALF-LIFE (days)
+0.0                      #POLLUTANT RESUSPENSION (1/m)
+6.0 2.5 1.0     #PARTICLE:DIAMETER (um), DENSITY (g/cc), SHAPE
+0.0 0.0 0.0 0.0 0.0    #DEP VEL (m/s), MW (g/Mole), SFC REACT. RATIO, DIFFUSIVITY RATIO, HENRY'S CONSTANT
+0.0 0.0 0.0   #WET REMOVAL: HENRY'S (Molar/atm), IN-CLOUD (1/s), BELOW-CLOUD (1/s)
+0                        #RADIOACTIVE DECAY HALF-LIFE (days)
+0.0                      #POLLUTANT RESUSPENSION (1/m)
+20.0 2.5 1.0     #PARTICLE:DIAMETER (um), DENSITY (g/cc), SHAPE
+0.0 0.0 0.0 0.0 0.0    #DEP VEL (m/s), MW (g/Mole), SFC REACT. RATIO, DIFFUSIVITY RATIO, HENRY'S CONSTANT
+0.0 0.0 0.0   #WET REMOVAL: HENRY'S (Molar/atm), IN-CLOUD (1/s), BELOW-CLOUD (1/s)
+0                        #RADIOACTIVE DECAY HALF-LIFE (days)
+0.0                      #POLLUTANT RESUSPENSION (1/m)
